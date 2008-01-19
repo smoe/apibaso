@@ -1,9 +1,10 @@
 #summary Collection of proteins with polar distribution in epithelia
+#labels Featured
 
 = Introduction =
 
 This project accompanies a paper describing a collection of such membrane proteins that show to be differentially sorted to apical or basolateral domains in kidney epithelia.
 
-= Details =
+= See Also =
 
-Coming.
+* [http://code.google.com/p/stransmem/ sTransmem] - collection of soluble variants of transmembrane proteins
