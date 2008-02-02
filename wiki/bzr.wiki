@@ -1,4 +1,5 @@
 #summary Googlecode https svn repositories and bazaar (bzr)
+#labels Featured
 
 = Introduction =
 
