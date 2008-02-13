@@ -1,0 +1,32 @@
+apibaso - scripts
+-----------------
+
+The following scripts are executed for the analysis of the XML document to prepare
+the initial predictor that was based on a k-Nearest-Neighbour classification. Some
+bits of David's work to prepare the files for the cross-validation may still be missing
+and shall be updated over the next days.
+
+
+apibaso_filter.pl	- UniProt IDs are read from the XML file and
+			  with the help of BioPerl, the respective
+			  entries are read from the public database.
+
+hmmtop2sequences.pl	- using the topology predition to substract
+			  subsequences on which the pattern search
+			  shall be performed.
+
+spexsFilter.pl
+
+patterndistribution.pl  - The patterns SPEXS comes up with are run
+			  against the sequences to prepare a
+			  sequence x pattern
+			  matrix.
+
+evaluate_pattern.pl
+
+selection_in_R.R	- no longer used.
+
+knn_script.R		- cross-evaluation of patterns
+
+
+-- Steffen Moeller <moeller@inb.uni-luebeck.de> Wed, 13 Feb 2008 15:12:02 +0100

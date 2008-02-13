@@ -9,6 +9,7 @@ packages:
 
 	bioperl
 	libxml-simpleobject-perl
+	r-recommended
 
 As a Debian user active in bioinformatics you may be interested in the
 Debian-Med Custom Debian Distribution, which signs responsible for the

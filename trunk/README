@@ -52,7 +52,9 @@ spexs.charclass
 
 src
 
-	Scripts performing the above.
+	Scripts controlled by the Makefile to prepare the k-Nearest-Neighour
+	classifier on a (possibly changed)_XML file. The cross-validation had
+	a couple of scripts that went temporarily missing.
 
 Contact
 -------
