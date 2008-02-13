@@ -1,0 +1,20 @@
+The only operating system that ever got in touch with the data presented
+on this repository was either Debian Linux or Ubuntu. Sadly, neither SPEXS
+nor HMMTOP are publicly available Debian packages. We have prepared such
+locally and can help with the diff.gz to ease your packaging.
+
+The database is a mere XML file and should work with any browser except
+for Konqueror. The scripts under Debian Linux make use of the following
+packages:
+
+	bioperl
+	libxml-simpleobject-perl
+
+As a Debian user active in bioinformatics you may be interested in the
+Debian-Med Custom Debian Distribution, which signs responsible for the
+majority of the packages in Debian that concern our field - the bioperl
+package for instance. Their project home page is on
+
+	http://debian-med.alioth.debian.org.
+
+-- Steffen Moeller  Wed, 13 Feb 2008 10:21:07 +0100
