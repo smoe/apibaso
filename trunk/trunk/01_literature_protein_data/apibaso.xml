@@ -2756,7 +2756,7 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 	<api:variant
 		    tissue="MDCK"
 		    location="basolateral"
-		    gene="Lipid phosphate phosphatases, LPP§"
+		    gene="Lipid phosphate phosphatases, LPP3"
 		    comment="pmid 14527693:In the case of LPP3, a dityrosine motif present in the second cytoplasmic portion was identified as basolateral targeting signal"
 		    spid="LPP3_HUMAN"
 		    UniProt="O14495"

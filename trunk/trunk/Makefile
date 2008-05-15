@@ -18,6 +18,8 @@
 #  distributions of patterns
 #
 
+target: all
+
 NUMPATTERNS=80
 LITERATURE=01_literature_protein_data
 SEQUENCES=02_retrieved_sequences
@@ -61,25 +63,50 @@ src/kai_alles_gegen_alles/doit: src/kai_alles_gegen_alles/doit.c
 %.hmmtop: %.fasta
 	hmmtop -if=$< -of=$@
 
-	# Shuffling of sequences with respective EMBOSS tool
-	$(SUBSEQUENCES)/apical.shuffled.complete.fasta: $(SUBSEQUENCES)/apical.complete.fasta
-		shuffleseq $< $@
+# Shuffling of sequences with respective EMBOSS tool
+$(SUBSEQUENCES)/apical.shuffled.complete.fasta: $(SUBSEQUENCES)/apical.complete.fasta
+	shuffleseq $< $@
 
-	$(SUBSEQUENCES)/basolateral.shuffled.complete.fasta: $(SUBSEQUENCES)/basolateral.complete.fasta
-		shuffleseq $< $@
+$(SUBSEQUENCES)/basolateral.shuffled.complete.fasta: $(SUBSEQUENCES)/basolateral.complete.fasta
+	shuffleseq $< $@
 
 # Aim: lists of patterns as derived from spexs
 all:	
 	@echo "Possible targets are:"
-	@echo "	subsequences"
+	@echo " retrieval      - fetches reference sequences"
+	@echo " orthologues    - fetches reference sequences and their orthologues"
+	@echo " subsequences   - separates external, internal and tm domains"
 	@echo " hmmtop"
-	@echo "	comparisons"
-	@echo "	distributions"
-	@echo "	analyses"
+	@echo " comparisons"
+	@echo " distributions"
+	@echo " analyses"
 
+#
+# Retrieval of sequences across species ... 
+#
+
+retrieval: retrieval_stamp
+
+$(SEQUENCES)/reference/apical.complete.fasta $(SEQUENCES)/reference/basolateral.complete.fasta: $(LITERATURE)/apibaso.xml
+	echo Fetching sequences as specified in apibaso.xml
+	if [ ! -d $(SEQUENCES)/reference ] ; then mkdir -p $(SEQUENCES)/reference; fi
+	src/apibaso_filter.pl --xmlfile $(APIBASOXML) --destdir $(SEQUENCES)/reference
+
+retrieval_stamp: $(SEQUENCES)/reference/apical.complete.fasta \
+		 $(SEQUENCES)/reference/basolateral.complete.fasta
+	touch $@
+
+
+orthologues: orthologues_stamp
+
+orthologues_stamp: $(LITERATURE)/apibaso.xml
+	echo Fetching sequences as specified in apibaso.xml
+	echo        !! and their orthologues !!
+	src/apibaso.pl --xmlfile $(APIBASOXML) --destdir $(SEQUENCES)
+	touch $@
 
 subsequences: \
-	 $(SUBSEQUENCES)/apical.tm.fasta \
+	$(SUBSEQUENCES)/apical.tm.fasta \
  	$(SUBSEQUENCES)/apical.tmin.fasta \
  	$(SUBSEQUENCES)/apical.in.fasta \
  	$(SUBSEQUENCES)/apical.out.fasta \
@@ -95,7 +122,8 @@ subsequences: \
 	$(SUBSEQUENCES)/apical.tm.shuffled \
 	$(SUBSEQUENCES)/apical.tmin.shuffled \
 	$(SUBSEQUENCES)/apical.in.shuffled \
-	$(SUBSEQUENCES)/apical.out.shuffled: \
+
+$(SUBSEQUENCES)/apical.out.shuffled: \
 	$(SUBSEQUENCES)/apical.complete.hmmtop $(SUBSEQUENCES)/apical.shuffled.complete.fasta $(HMMTOPSEQUENCESPL)
 	perl $(HMMTOPSEQUENCESPL) --hmmtop $(SUBSEQUENCES)/apical.complete.hmmtop --sequences $(SUBSEQUENCES)/apical.complete.fasta \
 	    --corename=$(SUBSEQUENCES)/apical
@@ -123,56 +151,23 @@ subsequences: \
 
 
 #
-# Retrieval of sequences across species ... David
-#
-
-retrieval: retrieval_time_stamp
-
-retrieval_time_stamp: $(LITERATURE)/apibaso.xml
-	echo Fetching sequences as specified in apibaso.xml
-	echo These are from several species, not only the human
-
-	src/apibaso.pl --xmlfile $(APIBASOXML) --destdir $(SEQUENCES)
-	
-	touch retrieval_time_stamp
-
-#
-# alignment of fasta sequences ... David and t_coffee
-#
-
-
-#
-#
-# read valid sequencs and convert them to spexs
-#
-
-
-
-
-
-
-
-
-
-#
-# hmmtopology for each .fasta entry in retrieval executed
+# hmmtopology for each .fasta entry in orthologues executed
 #
 
 hmmtop: hmmtop.stamp
 
-hmmtop.stamp:  retrieval_time_stamp src/tmpredict.sh
-
-	echo Perform hmmtopology prediction for each .fasta
-	echo start with apical .fasta files
+hmmtop.stamp:  orthologues_stamp src/tmpredict.sh
+	echo Topology prediction for each .fasta file with HMMTOP
+	echo   apical
 	src/tmpredict.sh $(SEQUENCES)/apical $(SEQUENCES)/apical_hmmtopology
-	echo continue with basolateral .fasta files
+	echo   basolateral
 	src/tmpredict.sh $(SEQUENCES)/basolateral $(SEQUENCES)/basolateral_hmmtopology
-	echo et voila monsieur marche bien!
-
+	echo Completed topology prediction
 	touch hmmtop.stamp
 
 #
-# take all internal sequences (.fasta format) and match them with orthologues (output .aln format)
+# take all internal sequences (.fasta format) and match them with
+# orthologues (output .aln format)
 #
 
 align: 
@@ -182,12 +177,12 @@ align:
 	$(MAKE) DOMAIN=complete align_impl
 
 align_impl align_$(DOMAIN).stamp: hmmtop.stamp src/align_tcoffe.sh
-	echo performance of alignment with t_coffee of all .$(DOMAIN).fasta files in apical and basolateral_hmmtopology
-	echo let us start with apical
+	echo Alignment with t_coffee of all .$(DOMAIN).fasta files
+	echo    apical protein sequences
 	src/align_tcoffe.sh $(SEQUENCES)/apical_hmmtopology $(SUBSEQUENCES)/apical_$(DOMAIN)_conserved $(DOMAIN)
-	echo continue with basolateral sequences
+	echo    basolateral protein sequences
 	src/align_tcoffe.sh $(SEQUENCES)/basolateral_hmmtopology $(SUBSEQUENCES)/basolateral_$(DOMAIN)_conserved $(DOMAIN)
-	echo Mister Bachelor of science the job was correct!
+	echo Alignment completed
 	touch align_$(DOMAIN).stamp
 
 
@@ -204,14 +199,12 @@ search:
 	$(MAKE) DOMAIN=complete search_impl
 	
 search_impl search_$(DOMAIN).stamp: align_$(DOMAIN).stamp src/search.sh
-	echo Fetching .aln files from alignment
+	echo Starting: Fetching .aln files from alignment
 	@[ -d $(CONSERVED) ] || mkdir $(CONSERVED)
 	src/search.sh $(SUBSEQUENCES)/apical_$(DOMAIN)_conserved $(CONSERVED)/apical_$(DOMAIN)_conserved
 	src/search.sh $(SUBSEQUENCES)/basolateral_$(DOMAIN)_conserved $(CONSERVED)/basolateral_$(DOMAIN)_conserved
-
-	echo jawohl David das ging klar! Weiter Junge!
+	echo Completed: Fetching .aln files from alignment
 	touch search_$(DOMAIN).stamp
-
 
 mapping:
 	$(MAKE) DOMAIN=in mapping_impl
@@ -240,20 +233,24 @@ mapping_impl mapping_$(DOMAIN).stamp: src/permute.pl search_$(DOMAIN).stamp
 #
 
 conversion_to_spexs: 
-
 	$(MAKE) DOMAIN=in conversion_impl
 	$(MAKE) DOMAIN=out conversion_impl
 	$(MAKE) DOMAIN=tm conversion_impl
 	$(MAKE) DOMAIN=complete conversion_impl
 
-conversion_impl conversion_$(DOMAIN).stamp: mapping_$(DOMAIN).stamp $(CONSERVED)/apical_$(DOMAIN)_conserved_main.spexs $(CONSERVED)/basolateral_$(DOMAIN)_conserved_main.spexs
+conversion_impl conversion_$(DOMAIN).stamp: \
+	    mapping_$(DOMAIN).stamp \
+	    $(CONSERVED)/apical_$(DOMAIN)_conserved_main.spexs \
+	    $(CONSERVED)/basolateral_$(DOMAIN)_conserved_main.spexs
 	touch conversion_$(DOMAIN)_main.stamp
 
-$(CONSERVED)/basolateral_$(DOMAIN)_conserved_main.fasta: $(wildcard $(CONSERVED)/basolateral_$(DOMAIN)_conserved/main/*.fasta)
+$(CONSERVED)/basolateral_$(DOMAIN)_conserved_main.fasta: \
+	    $(wildcard $(CONSERVED)/basolateral_$(DOMAIN)_conserved/main/*.fasta)
 	cat $(CONSERVED)/basolateral_$(DOMAIN)_conserved/main/*.fasta > $(CONSERVED)/basolateral_$(DOMAIN)_conserved_main.fasta
 	cat $(CONSERVED)/basolateral_$(DOMAIN)_conserved/test/*.fasta > $(CONSERVED)/basolateral_$(DOMAIN)_conserved_test.fasta
 
-$(CONSERVED)/apical_$(DOMAIN)_conserved_main.fasta: $(wildcard $(CONSERVED)/apical_$(DOMAIN)_conserved/main/*.fasta)
+$(CONSERVED)/apical_$(DOMAIN)_conserved_main.fasta: \
+	    $(wildcard $(CONSERVED)/apical_$(DOMAIN)_conserved/main/*.fasta)
 	cat $(CONSERVED)/apical_$(DOMAIN)_conserved/main/*.fasta > $(CONSERVED)/apical_$(DOMAIN)_conserved_main.fasta
 	cat $(CONSERVED)/apical_$(DOMAIN)_conserved/test/*.fasta > $(CONSERVED)/apical_$(DOMAIN)_conserved_test.fasta
 
@@ -274,9 +271,14 @@ compare_internal_1: compare_internal_1.stamp
 # 	$(MAKE) DOMAIN=tm compare_impl
 # # 	$(MAKE) DOMAIN=complete compare_impl
 
-compare_internal_1.stamp: $(COMPARISONS)/basolateral_in.vs.all_conserved_main.spexs_output  $(COMPARISONS)/apical_out.vs.all_conserved_main.spexs_output $(COMPARISONS)/apical_tm.vs.all_conserved_main.spexs_output
+compare_internal_1.stamp: \
+	    $(COMPARISONS)/basolateral_in.vs.all_conserved_main.spexs_output \
+	    $(COMPARISONS)/apical_out.vs.all_conserved_main.spexs_output \
+	    $(COMPARISONS)/apical_tm.vs.all_conserved_main.spexs_output
 
-$(COMPARISONS)/basolateral_in.vs.all_conserved_main.spexs_output: $(CONSERVED)/basolateral_in_conserved_main.spexs $(CONSERVED)/apical_in_conserved_main.spexs
+$(COMPARISONS)/basolateral_in.vs.all_conserved_main.spexs_output: \
+	    $(CONSERVED)/basolateral_in_conserved_main.spexs \
+	    $(CONSERVED)/apical_in_conserved_main.spexs
 	@[ -d $(COMPARISONS) ] || mkdir $(COMPARISONS)
 	$(SPEXS) $(SPEXS_OPTIONS) \
 	-f $(CONSERVED)/basolateral_in_conserved_main.spexs \
@@ -286,7 +288,9 @@ $(COMPARISONS)/basolateral_in.vs.all_conserved_main.spexs_output: $(CONSERVED)/b
 	> $(COMPARISONS)/basolateral_in.vs.all_conserved_main.spexs_output
 
 	
-$(COMPARISONS)/apical_out.vs.all_conserved_main.spexs_output: $(CONSERVED)/basolateral_in_conserved_main.spexs $(CONSERVED)/apical_in_conserved_main.spexs
+$(COMPARISONS)/apical_out.vs.all_conserved_main.spexs_output: \
+	    $(CONSERVED)/basolateral_in_conserved_main.spexs \
+	    $(CONSERVED)/apical_in_conserved_main.spexs
 	@[ -d $(COMPARISONS) ] || mkdir $(COMPARISONS)
 	$(SPEXS) $(SPEXS_OPTIONS) \
 	-f $(CONSERVED)/apical_out_conserved_main.spexs \
@@ -301,14 +305,11 @@ $(COMPARISONS)/apical_tm.vs.all_conserved_main.spexs_output: $(CONSERVED)/basola
 	-f $(CONSERVED)/apical_in_conserved_main.spexs \
 	-f $(CONSERVED)/basolateral_complete_conserved_main.spexs \
 	> $(COMPARISONS)/apical_tm.vs.all_conserved_main.spexs_output
-	
-
 	touch compare_internal_1.stamp
 
 
 
 compare_internal_2:
-
 	$(MAKE) DOMAIN=in compare_impl
 	$(MAKE) DOMAIN=out compare_impl
 	$(MAKE) DOMAIN=tm compare_impl
@@ -478,9 +479,9 @@ distribution_subdomains_impl distribution_$(DOMAIN).stamp: compare_internal_1.st
 
 
 alignment_2: align_time_stamp
-align_time_stamp_2: retrieval_time_stamp 
+align_time_stamp_2: orthologues_stamp 
 
-	echo Make alignment of sequences derived from retrieval
+	echo Make alignment of sequences derived from orthologues
 	echo These are from several species, not only the human
 	src/alignment.sh $(SEQUENCES)/apical $(SUBSEQUENCES)/apical_aln
 	echo apical wird alignt
@@ -716,7 +717,7 @@ commit:
 .PHONY: clean subsequences comparisons distributions backup all \
 	analyses analysis analyses_subdomains_impl \
 	api_$(DOMAIN)_distributions baso_$(DOMAIN)_distributions \
-	commit retrieval conversion_to_spexs
+	commit retrieval orthologues conversion_to_spexs
 
 
 .PRECIOUS: $(COMPARISONS)/apical.vs.basolateral.$(DOMAIN).spexs_output $(COMPARISONS)/basolateral.vs.apical.$(DOMAIN).spexs_output $(COMPARISONS)/basolateral.vs.apical.$(DOMAIN).spexs_output 
