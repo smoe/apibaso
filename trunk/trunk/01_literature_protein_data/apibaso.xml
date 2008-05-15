@@ -60,9 +60,6 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 					 />
 			      
 		      </api:sequence-feature>	 
-	
-
-
 </api:variant>
 <api:variant location="apical"
         gene="bovine enteropeptidase"
@@ -133,7 +130,7 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 			 id="1655809" 
 			 start="276"
 			 end= "333"
-			 sequence=""
+                         sequence="NSCKQ NKQGANSRPV NQTPPPEGEK LHSDSGISVD SQSLHDQQPH TQTASGQALK GDG"
 			 localisation="cytoplasmic"> 
 	   <api:impact
 		      action="deletion"
@@ -142,7 +139,6 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 		      target="uniprot:P08138"
 		      />
 		</api:sequence-feature>
-
 </api:variant>
 <api:variant location="apical"
 	gene="CD3 - epsilon"

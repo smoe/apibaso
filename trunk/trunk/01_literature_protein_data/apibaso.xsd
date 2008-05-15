@@ -1,0 +1,24 @@
+<xsd:schema targetNamespace='http://bioinformatics.pzr.uni-rostock.de/~moeller/apibaso'
+     xmls:xsd="http://www.w3.org/2001/XMLSchema"
+     xmls:sol="http://bioinformatics.pzr.uni-rostock.de/~guest01/apibaso">
+ <xsd:element name="variantlist" type="sol:variantlistType" />
+ <xsd:complexType name="sol:variantlistType">
+  <xsd:attribute name='version' type="xsd:string">
+  <xsd:attribute name="author" type="xsd:string">
+  <xsd:sequence>
+   <xsd:element name="variant" type="sol:variantType" />
+   <xsd:complexType name="sol:variantType">
+    <xsd:attribute name="gene" type='xsd:string'>
+    <xsd:attribute name="UniProt" type='xsd:string'>
+    <xsd:sequence>
+     <xsd:element name="reference" type="sol:referenceType" />
+     <xsd:complexType name="sol:referenceType">
+      <xsd:attribute name="URL" type="xsd:string" />
+      <xsd:attribute name="type" type="xsd:string" />
+      <xsd:element name="title" type="xsd:string" />
+    </xsd:complexType>
+    </xsd:sequence>
+   </xsd:complexType>
+  </xsd:sequence>
+ </xsd:complexType>
+</xsd:schema> 
