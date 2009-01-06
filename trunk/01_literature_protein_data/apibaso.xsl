@@ -12,6 +12,10 @@
    </head>
    <body>
     <h1 align="center">Apical and Basolateral Sorted Proteins</h1>
+<p>
+<i>Caveat: only edit sorting data in the apibaso.xml file or send the maintainer an email.
+   Elsewhere it would not be noticed and be overwritten.</i>
+</p>
      <xsl:apply-templates select="api:variantlist" />
     <hr/>
    </body>

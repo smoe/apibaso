@@ -285,19 +285,70 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 		pmid="10734069" />
 </api:variant>
 <api:variant location="apical" 
-	gene="Muscarinic receptor 2"
+	gene="Muscarinic acetylcholine receptor 2"
 	spid="ACM2_HUMAN" 
 	UniProt="P08172"
 	synonyms="chrm2"
+	tissue="MDCK"
 	evidence="strong">
      	<api:reference 
 		type="pubmed"
     	 	title="Identification of a basolateral sorting signal for the M3 muscarinic acetylcholine receptor in Madin-Darby canine kidney cells."
     	 	authors="Nadler LS, Kumar G, Nathanson NM." 
 		pmid="11136723" />
+	<api:reference
+		type="pubmed" pmid="16968700"
+		title="Identification of a Novel Apical Sorting Motif and Mechanism of Targeting of the M2 Muscarinic Acetylcholine Receptor"
+		authors="Renée S. Chmelar and Neil M. Nathanson"
+		journal="J. Biol. Chem."
+		volume="281" number="46" pages="35381-35396"
+		year="2006" 
+		comment="by confocal analysis of a transiently transfected glycosylation mutant in which the three putative glycosylation sites were mutated, we determined that N-glycans are not necessary for the apical targeting of the M2 receptor. Next, using a chimeric receptor strategy, we found that two independent sequences within the M2 third intracellular loop can confer apical targeting to the basolaterally targeted M4 receptor, Val270-Lys280 and Lys280-Ser350. Experiments using Triton X-100 extraction followed by OptiPrepTM density gradient centrifugation and cholera toxin beta-subunit-induced patching demonstrate that apical targeting is not because of association with lipid rafts. 35S-Metabolic labeling experiments with domain-specific surface biotinylation as well as immunocytochemical analysis of the time course of surface appearance of newly transfected confluent MDCK cells expressing FLAG-M2-GFP demonstrate that the M2 receptor achieves its apical localization after first appearing on the basolateral domain. Domain-specific application of tannic acid of newly transfected cells indicates that initial basolateral plasma membrane expression is required for subsequent apical localization. This is the first demonstration that a G-protein-coupled receptor achieves its apical localization in MDCK cells via transcytosis."/>
+	<api:sequence-feature
+		id="16968700"
+		localisation="cytoplasmic"
+		start="270"
+		end="280"
+		sequence="V TENCVQGEEK"
+	>
+		<api:impact
+			action="insertion"
+			site="c-term"
+			distribution="apical"
+			target="uniprot:P08173"
+		/>
+	</api:sequence-feature>
+	<api:sequence-feature
+		id="16968700"
+		localisation="cytoplasmic"
+		start="280"
+		end="350"
+		sequence="K ESSNDSTSVS AVASNMRDDE ITQDENTVST SLGHSKDENS KQTCIRIGTK TPKSDSCTPT NTTVEVVGSS"
+	>
+		<api:impact
+			action="insertion"
+			site="c-term"
+			distribution="apical"
+			target="uniprot:P08173"
+		/>
+	</api:sequence-feature>
+	<api:sequence-feature
+		id="16968700"
+		localisation="cytoplasmic"
+		start="227"
+		end="315"
+		sequence="K ESSNDSTSVS AVASNMRDDE ITQDENTVST SLGHSKDENS KQTCIRIGTK TPKSDSCTPT NTTVEVVGSS"
+	>
+		<api:impact
+			action="deletion"
+			distribution="basolateral"
+			target="uniprot:P08172"
+			comment="A series of M2 third intracellular loop deletion mutants suggested that there are multiple regions within the M2 third intracellular loop that contribute to its apical targeting. Because deletion of nearly the entire third intracellular loop did not result in a fully unpolarized distribution of the receptor, other sequences besides those investigated here may contribute to the apical targeting of the M2 receptor."
+		/>
+	</api:sequence-feature>
 </api:variant>
 <api:variant location="basolateral" 
-	gene="Muscarinic receptor 3"
+	gene="Muscarinic acetylcholine receptor 3"
    	spid="ACM3_HUMAN" 
 	UniProt="P20309" 
 	synonyms="chrm3"
@@ -332,6 +383,21 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 		      </api:sequence-feature>	 
 	
 	
+</api:variant>
+<api:variant location="basolateral" 
+	gene="Muscarinic acetylcholine receptor 4"
+	spid="ACM4_HUMAN" 
+	UniProt="P08173"
+	synonyms="CHRM4"
+	tissue="MDCK"
+	evidence="strong">
+     	<api:reference 
+		type="pubmed" pmid="16968700"
+		title="Identification of a Novel Apical Sorting Motif and Mechanism of Targeting of the M2 Muscarinic Acetylcholine Receptor"
+		authors="Renée S. Chmelar and Neil M. Nathanson"
+		journal="J. Biol. Chem."
+		volume="281" number="46" pages="35381-35396"
+		year="2006" />
 </api:variant>
 <api:variant location="basolateral" 
 	gene="follicle-stimulating hormone receptor"
