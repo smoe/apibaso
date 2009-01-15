@@ -1746,67 +1746,67 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 			   target=""
 			   />
 	</api:sequence-feature>
-	</api:variant>	
-	<api:variant
-		    tissue="MDCK"
-		    location="basolateral"
-		    gene="Sulfate anion transporter 1"
-		    synonyms=" SAT-1,Solute carrier family 26 member 1"
-		    comment="pmid 15273250 (discussion): An analysis of other known chloride/bicarbonate or anion exchangers from SLC26 family, ..., demonstrates that those anion exchangers that are targeted to the basolateral membrane (SLC26A1 and SLC26A7) contain motifs with high homology to the current motif (GenBankTM NM_022042 [GenBank]  for A1, from residue 675 to 678 with aa sequence QLFL with full length of 701 aa; GenBankTM NM_134266 [GenBank]  for A7, from residue 343 to 346 with aa sequence QEFL with full length of 663 aa).           *found in discussion of pmid 15273250.
-		    pmid 15070814: Elimination of a dileucine motif at position 677/678 resulted in the loss of basolateral sorting, suggesting that this motif is required for sat-1 targeting to the basolateral membrane. (Introduction) THE FIRST SULFATE ANION TRANSPORTER (sat-1) was isolated from a rat liver cDNA library."
-		    spid="S26A1_HUMAN"
-		    UniProt="Q9H2B4"
-		    >
-		<api:reference
-			      type="pubmed"
-			      authors="Li HC, Worrell RT, Matthews JB, Husseinzadeh H, Neumeier L, Petrovic S, Conforti L, Soleimani M."
-			      title="Identification of a carboxyl-terminal motif essential for the targeting of Na+-HCO-3 cotransporter NBC1 to the basolateral membrane."
-			      journal="J Biol Chem. "
-			      year="2004"
-			      volume="279"
-			      number="41"
-			      pages="43190-43197"
-		              pmid="15273250"
-			      />
-		<api:sequence-feature 
-				      id="15273250" 
-				      start="675"
-				      end= "678"
-				      sequence="QLFL* (human)"
-				      localisation="?"> 
-			<api:impact
-				   action=""
-				   site=""
-				   distribution=""
-				   target=""
-				   />
-		</api:sequence-feature>
-		<api:reference
-			      type="pubmed"
-			      authors="Regeer RR, Markovich D."
-			      title="A dileucine motif targets the sulfate anion transporter sat-1 to the basolateral membrane in renal cell lines."
-			      journal="Am J Physiol Cell Physiol"
-			      year="2004"
-			      volume="287"
-			      number="2"
-			      pages="365-372"
-			      pmid="15070814 "
-			      />
-		<api:sequence-feature 
-				      id="15070814 " 
-				      start="677"
-				      end= "678"
-				      sequence="LL (rat)"
-				      localisation="cytoplasmic"> 
-			<api:impact
-				   action="deletion"
-				   site="cytoplasmic"
-				   distribution="non polar"
-				   target="P45380"
-				   />
-		</api:sequence-feature>
-	</api:variant>	
-	
+</api:variant>	
+<api:variant
+	    tissue="MDCK"
+	    location="basolateral"
+	    gene="Sulfate anion transporter 1"
+	    synonyms=" SAT-1,Solute carrier family 26 member 1"
+	    comment="pmid 15273250 (discussion): An analysis of other known chloride/bicarbonate or anion exchangers from SLC26 family, ..., demonstrates that those anion exchangers that are targeted to the basolateral membrane (SLC26A1 and SLC26A7) contain motifs with high homology to the current motif (GenBankTM NM_022042 [GenBank]  for A1, from residue 675 to 678 with aa sequence QLFL with full length of 701 aa; GenBankTM NM_134266 [GenBank]  for A7, from residue 343 to 346 with aa sequence QEFL with full length of 663 aa).           *found in discussion of pmid 15273250.
+	    pmid 15070814: Elimination of a dileucine motif at position 677/678 resulted in the loss of basolateral sorting, suggesting that this motif is required for sat-1 targeting to the basolateral membrane. (Introduction) THE FIRST SULFATE ANION TRANSPORTER (sat-1) was isolated from a rat liver cDNA library."
+	    spid="S26A1_HUMAN"
+	    UniProt="Q9H2B4"
+	    >
+	<api:reference
+		      type="pubmed"
+		      authors="Li HC, Worrell RT, Matthews JB, Husseinzadeh H, Neumeier L, Petrovic S, Conforti L, Soleimani M."
+		      title="Identification of a carboxyl-terminal motif essential for the targeting of Na+-HCO-3 cotransporter NBC1 to the basolateral membrane."
+		      journal="J Biol Chem. "
+		      year="2004"
+		      volume="279"
+		      number="41"
+		      pages="43190-43197"
+		      pmid="15273250"
+		      />
+	<api:sequence-feature 
+			      id="15273250" 
+			      start="675"
+			      end= "678"
+			      sequence="QLFL* (human)"
+			      localisation="?"> 
+		<api:impact
+			   action=""
+			   site=""
+			   distribution=""
+			   target=""
+			   />
+	</api:sequence-feature>
+	<api:reference
+		      type="pubmed"
+		      authors="Regeer RR, Markovich D."
+		      title="A dileucine motif targets the sulfate anion transporter sat-1 to the basolateral membrane in renal cell lines."
+		      journal="Am J Physiol Cell Physiol"
+		      year="2004"
+		      volume="287"
+		      number="2"
+		      pages="365-372"
+		      pmid="15070814 "
+		      />
+	<api:sequence-feature 
+			      id="15070814 " 
+			      start="677"
+			      end= "678"
+			      sequence="LL (rat)"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="deletion"
+			   site="cytoplasmic"
+			   distribution="non polar"
+			   target="P45380"
+			   />
+	</api:sequence-feature>
+</api:variant>	
+
 <api:variant location="apical"
 	gene="Ciliary neurotrophic factor receptor alpha [Precursor]"
 	spid="CNTFR_HUMAN"
@@ -2447,7 +2447,7 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 		      journal=" J Cell Sci."
 		      year="2005"
 		      volume="118"
-		      number=""
+		      number="Pt 18"
 		      pages="4243-4252"
 		      pmid="16155254"
 		      />
