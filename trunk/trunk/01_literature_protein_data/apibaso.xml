@@ -8,6 +8,12 @@
 #location,protein name,spid,gene name,PubMED
 #apical,influenza hemagglutinin,?,?,"8654387, could not follow reference (1996 EMBO)"
 apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, not DIG associated"
+
+
+HA
+	http://www.uniprot.org/update?entry=Q1I2B9#
+	http://jcb.rupress.org/cgi/content/abstract/111/3/987
+
 -->
 <api:variant location="apical"
 	gene="aminopeptidase N"
@@ -656,7 +662,7 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
   	comment="attention, apical distribution in other tissues, particularly shown for Retinal Pigment Epithelium (RPE)...">
      <api:reference 
      	type="pubmed" 
-     	title=" Involvement of VIP36 in intracellular transport and secretion of glycoproteins in polarized Madin-Darby canine kidney (MDCK) cells." 
+     	title="Involvement of VIP36 in intracellular transport and secretion of glycoproteins in polarized Madin-Darby canine kidney (MDCK) cells." 
      	authors="Hara-Kuge S, Ohkura T, Ideo H, Shimada O, Atsumi S, Yamashita K." 
      	pmid="9700159" />
 </api:variant>
@@ -2612,7 +2618,7 @@ apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, n
 			    gene="ATP7A"
 			    comment="pmid 15269005: we identified a dileucine motif proximal to the COOH terminus of MNK that was critical for correctly targeting the protein to the BL membrane and a putative PDZ target motif that was required for localization at the BL membrane in elevated copper"
 			    spid="ATP7A_HUMAN"
-			    UniProt=" 	Q04656"
+			    UniProt="Q04656"
 			    >
 			<api:reference
 				      type="pubmed"
