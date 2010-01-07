@@ -16,6 +16,25 @@ HA
 
 -->
 <api:variant location="apical"
+	gene="Endolyn"
+	spid="MUC24_HUMAN"
+	UniProt="Q04900"
+	synonyms="MUC-24, CD164"
+	tissue="MDCK"
+>
+	<api:reference
+		type="pubmed"
+		pmid="11707397"
+		journal="EMBO J."
+		year="2001"
+		volume="20"
+		number="22"
+		pages="6256-6264"
+		title="Competing sorting signals guide endolyn along a novel route to lysosomes in MDCK cells."
+		authors="Ihrke G, Bruns JR, Luzio JP, Weisz OA."
+	>
+</api:variant>
+<api:variant location="apical"
 	gene="hemagglutinin"
 	spid="Q1I2B9_9INFA"
 	UniProt="Q1I2B9"
@@ -52,7 +71,7 @@ HA
 	UniProt="A6H4P4"
 	synonyms="G"
 	tissue="MDCK"
-	transcytosis="apical->basolateral"
+	transcytosis="apical->basolateral">
 	<api:reference
 		type="pubmed"
 		pmid="283416"
