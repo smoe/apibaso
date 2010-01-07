@@ -1,4 +1,3 @@
-<?xml-stylesheet type="text/xsl" href="apibaso.xsl"?>
 
 <api:variantlist
 	author="Steffen Moeller moeller@pzr.uni-rostock.de"
@@ -9,6 +8,7 @@
 #apical,influenza hemagglutinin,?,?,"8654387, could not follow reference (1996 EMBO)"
 apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, not DIG associated"
 
+http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2148223/?tool=pubmed
 
 HA
 	http://www.uniprot.org/update?entry=Q1I2B9#
@@ -16,53 +16,64 @@ HA
 
 -->
 <api:variant location="apical"
-	gene="hemagglutinin",
-	spid="Q1I2B9_9INFA",
-	UniProt="Q1I2B9",
-	synonyms="HA",
+	gene="hemagglutinin"
+	spid="Q1I2B9_9INFA"
+	UniProt="Q1I2B9"
+	synonyms="HA"
 	tissue="MDCK">
 	<api:reference
-		type="pubmed",
-		pmid="2202740",
-		evidence="strong",
-		title="Distinct transport vesicles mediate the delivery of plasma membrane proteins to the apical and basolateral domains of MDCK cells.",
-		authors="Wandinger-Ness A, Bennett MK, Antony C, Simons K.",
-		journal="J Cell Biol.",
-		year="1990",
-		volume="111",
-		number="3",
+		type="pubmed"
+		pmid="2202740"
+		evidence="strong"
+		title="Distinct transport vesicles mediate the delivery of plasma membrane proteins to the apical and basolateral domains of MDCK cells."
+		authors="Wandinger-Ness A, Bennett MK, Antony C, Simons K."
+		journal="J Cell Biol."
+		year="1990"
+		volume="111"
+		number="3"
 		pages="987-1000"
 		/>
 	<api:reference
-		type="pubmed",
-		pmid="283416",
-		evidence="strong",
-		title="Asymmetric budding of viruses in epithelial monlayers: a model system for study of epithelial polarity.",
-		authors="Rodriguez Boulan E, Sabatini DD.",
-		journal="Proc. Natl. Acad. Sci USA.",
-		yeaer="1978",
-		volume="75",
-		number="10",
+		type="pubmed"
+		pmid="283416"
+		evidence="strong"
+		title="Asymmetric budding of viruses in epithelial monlayers: a model system for study of epithelial polarity."
+		authors="Rodriguez Boulan E, Sabatini DD."
+		journal="Proc. Natl. Acad. Sci USA."
+		yeaer="1978"
+		volume="75"
+		number="10"
 		pages="5071-5075"
 	/>
 </api:variant>
-<api:variant location="basolateral",
-	gene="VSV G Protein",
-	spid="A6H4P4_9RHAB",
+<api:variant location="basolateral"
+	gene="VSV G Protein"
+	spid="A6H4P4_9RHAB"
 	UniProt="A6H4P4"
-	synonyms="G",
+	synonyms="G"
 	tissue="MDCK"
+	transcytosis="apical->basolateral"
 	<api:reference
-		type="pubmed",
-		pmid="283416",
-		evidence="strong",
-		title="Asymmetric budding of viruses in epithelial monlayers: a model system for study of epithelial polarity.",
-		authors="Rodriguez Boulan E, Sabatini DD.",
-		journal="Proc. Natl. Acad. Sci USA.",
-		yeaer="1978",
-		volume="75",
-		number="10",
+		type="pubmed"
+		pmid="283416"
+		evidence="strong"
+		title="Asymmetric budding of viruses in epithelial monlayers: a model system for study of epithelial polarity."
+		authors="Rodriguez Boulan E, Sabatini DD."
+		journal="Proc. Natl. Acad. Sci USA."
+		yeaer="1978"
+		volume="75"
+		number="10"
 		pages="5071-5075"
+	/>
+	<api:reference
+		type="pubmed"
+		pmid="6411736"
+		authors="Pesonen M,  Simons K."
+		title="Transepithelial transport of a viral membrane glycoprotein implanted into the apical plasma membrane of Madin–Darby canine kidney cells. II. Immunological quantitation."
+		journal="J. Cell. Biol."
+		year="1983"
+		volume="97"
+		pages="638-643"
 	/>
 </api:variant>
 <api:variant location="apical"
@@ -321,7 +332,7 @@ HA
 	gene="asialoglycoproteine receptor 1"
 	spid="LECH_HUMAN" 
 	UniProt="P07306" 
-	synonyms="ASGR1 (HEPATIC LECTIN H1) (transferrin receptor)"
+	synonyms="ASGR1 (HEPATIC LECTIN H1) (AGPR)"
 	tissue="MDCK" 
 	comment="10734069 proposes sorting signal">
 	<api:reference 
@@ -2028,6 +2039,7 @@ HA
 		pmid="9417063"
 	/>
 </api:variant>
+
 <!--<api:variant
 	location="apical"
 	tissue="MDCK"
@@ -2049,6 +2061,7 @@ HA
 		pmid="16249236"
 	/>
 </api:variant>-->
+
 <api:variant
 	gene="Glutamate carboxypeptidase II"
 	synonyms="Folate hydrolase 1, FOLH1, Prostate-specific membrane antigen,PSMA"
@@ -2148,6 +2161,24 @@ HA
 	/>
 </api:variant>
 -->
+<api:variant location="basolateral"
+	tissue="MDCK"
+	gene="Low-density lipoprotein receptor"
+	spid="LDLR_HUMAN"
+	UniProt="P01130"
+	synonyms="LDLR"
+	comment="Uncertain if human sequence was used"
+	<api:reference
+		type="pubmed"
+		pmid="10189373"
+		journal="J. Cell. Biol."
+		year="1999"
+		volume="145"
+		number="1"
+		pages="123-139"
+		title="The receptor recycling pathway contains two distinct populations of early endosomes with different sorting functions."
+		authors="Sheff DR, Daro EA, Hull M, Mellman I.">
+</api:variant>
 <api:variant
 	location="apical"
 	tissue="MDCK"
