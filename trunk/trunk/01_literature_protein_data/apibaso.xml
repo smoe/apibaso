@@ -707,7 +707,7 @@ HA
 	UniProt="P43005" 
 	synonyms="SLC1A1,EAAT3,EAAC1"
 	tissue="MDCK"
-  	comment="also localized to the dendritic compartment in hippocampal neurons, where it ,is clustered adjacent to postsynaptic sites">
+  	comment="also localized to the dendritic compartment in hippocampal neurons, where it is clustered adjacent to postsynaptic sites">
     <api:reference 
     	type="pubmed" 
     	title=" A novel sorting motif in the glutamate transporter excitatory amino acid transporter 3 directs its targeting in Madin-Darby canine kidney cells and hippocampal neurons. " 
@@ -3050,9 +3050,103 @@ HA
 			      pages="16878-16889"
 			      pmid="8207010"
 			      />
-	
 	</api:variant>	
-
+	<api:variant
+	    tissue="placental syncytiophoblastic cells"
+	    location="apical"
+	    gene="SLC7A5 (Large neutral amino acids transporter small subunit 1)"
+	    comment="Located to the plasma membrane by SLC3A2/4F2hc"
+	    spid="LAT1_HUMAN"
+	    UniProt="Q01650"
+	    >
+	</api:variant>	
+	<api:variant
+	    tissue="skin, heart, kidney, testis, ovary, intestine"
+	    location="gap-junction"
+	    gene="Gja10 (Gap junction alpha-10 protein) (Connexin-57)"
+	    comment=""
+	    spid="CXA10_MOUSE"
+	    UniProt="Q9WUS4"
+	    >
+	</api:variant>
+<!--
+	<api:variant
+	    tissue=""
+	    location=""
+	    gene="Fzd6 (Frizzled-6)"
+	    comment="No conclusive paper found"
+	    spid="FZD6_MOUSE"
+	    UniProt="Q61089"
+	    >
+	</api:variant>
+-->
+	<api:variant
+	    tissue="MDCK"
+	    location="basolateral"
+	    gene="Vangl1 (Vang-like protein 1) (Van Gogh-like protein 1) (Strabismus 2)"
+	    comment=""
+	    spid="VANG1_HUMAN"
+	    UniProt="Q8TAA9"
+	    >
+		<api:reference
+			type="pubmed"
+			authors="Michel Gravel, Alexandra Iliescu, Cynthia Horth, Sergio Apuzzo and Philippe Gros"
+			title="Molecular and Cellular Mechanisms Underlying Neural Tube Defects in the Loop-tail Mutant Mouse"
+			journal="Biochemistry"
+			year="2010"
+			volume="49"
+			number="16"
+			pages="3445–3455"
+			pmid="20329788"
+		/>
+	</api:variant>
+	<api:variant
+	    tissue="ok"
+	    location="apical"
+	    gene="SLC6A20 (SIT1) (Sodium- and chloride-dependent transporter XTRP3) (XT3) (XTRP3)"
+	    comment="via google"
+	    spid="S6A20_HUMAN"
+	    UniProt="Q9NP91"
+	    >
+	    <api:reference
+	    	type="pubmed"
+		authors="Ristic Z, Camargo SM, Romeo E, Bodoy S, Bertran J, Palacin M, Makrides V, Furrer EM, Verrey F."
+		title="Neutral amino acid transport mediated by ortholog of imino acid transporter SIT1/SLC6A20 in opossum kidney cells."
+		journal="Am J Physiol Renal Physiol."
+		year="2006"
+		volume="290"
+		number="4"
+		pages="F880-F887"
+	    />
+	</api:variant>
+	<api:variant
+	    tissue="kidney"
+	    location="apical"
+	    gene="SLC6A19 (B0AT1) (Sodium-dependent neutral amino acid transporter B(0)AT1)"
+	    comment="interacts as a heterodimer with rBAT"
+	    spid="S6A19_HUMAN"
+	    UniProt="Q695T7"
+	    >
+	    <api:reference
+		type="pubmed"
+		authors="Kleta R, Romeo E, Ristic Z, Ohura T, Stuart C, Arcos-Burgos M, Dave MH, Wagner CA, Camargo SR, Inoue S, Matsuura N, Helip-Wooley A, Bockenhauer D, Warth R, Bernardini I, Visser G, Eggermann T, Lee P, Chairoungdua A, Jutabha P, Babu E, Nilwarangkoon S, Anzai N, Kanai Y, Verrey F, Gahl WA, Koizumi A."
+		title="Mutations in SLC6A19, encoding B0AT1, cause Hartnup disorder."
+		journal="Nat Genet."
+		year="2004"
+		volume="36"
+		number="9"
+		pages="999-1002"
+	    />
+	</api:variant>
+	<api:variant
+	    tissue="kidney"
+	    location="basolateral"
+	    gene="SLC7A7 (Y+LAT1) (Y+L amino acid transporter 1)"
+	    comment=""
+	    spid="YLAT1_HUMAN"
+	    UniProt="Q9UM01"
+	    >
+	</api:variant>
 </api:variantlist>
 <!--
 <api:variant
