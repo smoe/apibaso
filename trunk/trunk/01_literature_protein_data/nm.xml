@@ -1,0 +1,194 @@
+
+<api:variantlist
+	author="Steffen Moeller steffen_moeller@gmx.de"
+	version="0.01"
+	xmlns:api="http://bioinformatics.pzr.uni-rostock.de/~guest01/apibaso">
+
+<api:variant location="nuclear-inner-membrane"
+	gene="SUN1"
+	spid="SUN1_HUMAN"
+	UniProt="O94901"
+	tissue="MDCK"
+>
+</api:variant>
+<api:variant location="nuclear-inner-membrane"
+	gene="SUN2"
+	spid="SUN2_HUMAN"
+	UniProt="Q9UH99"
+	tissue="MDCK"
+>
+</api:variant>
+<api:variant location="nuclear-inner-membrane"
+	gene="Lamin-B receptor (LBR)"
+	spid="LBR_HUMAN"
+	UniProt="Q14739"
+	tissue="MDCK"
+>
+</api:variant>
+<api:variant location="nuclear-inner-membrane"
+	gene="Inner nuclear membrane protein Man1 (LEMD3)"
+	spid="MAN1_HUMAN"
+	UniProt="Q9Y2U8"
+	tissue="MDCK"
+>
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="SYNE1 (Nesprin-1) (Nuclear envelope spectrin repeat protein 1) (Synaptic nuclear envelope protein 1) (Myocyte nuclear envelope protein 1) (Enaptin)"
+	    spid="SYNE1_HUMAN"
+	    UniProt="Q8NF91"
+	    >
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="SYNE2 (Nesprin-2) (Nuclear envelope spectrin repeat protein 2) (Synaptic nuclear envelope protein 2) (Syne-2) (Nucleus and actin connecting element protein) (NUANCE)"
+	    spid="SYNE2_HUMAN"
+	    UniProt="Q8WXH0"
+	    >
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="NRM (Nurim) (Nuclear envelope membrane protein)"
+	    comment=""
+	    spid="NRM_HUMAN"
+	    UniProt="Q8IXM6"
+	    >
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-outer-membrane"
+	    gene="EMD (Emerin)"
+	    comment="may also be in the inner membrane"
+	    spid="EMD_HUMAN"
+	    UniProt="P50402"
+	    >
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="TMEM43 (Transmembrane protein 43) (LUMA)"
+	    comment="Retained in the inner nuclear membrane through interaction with EMD and A- and B-lamins"
+	    spid="Q9BTV4"
+	    UniProt="TMM43_HUMAN"
+	    >
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="Lap2 (Tmpo) (Lamina-associated polypeptide 2, isoforms beta/delta/epsilon/gamma)"
+	    comment=""
+	    spid="LAP2B_MOUSE"
+	    UniProt="Q61029"
+	    >
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="LEMD2 (LEM domain-containing protein 2)"
+	    comment=""
+	    spid="Q8NC56"
+	    UniProt="LEMD2_HUMAN"
+	    >
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="TOR1AIP1 (Torsin-1A-interacting protein 1)"
+	    comment=""
+	    spid="TOIP1_HUMAN"
+	    UniProt="Q5JTV8"
+	    >
+</api:variant>
+<api:variant
+	    tissue="retina"
+	    location="nuclear-inner-membrane,apical"
+	    gene="Crb1 (Crumbs homolog 1)"
+	    comment="Counterexample of a protein that shows polar sorting albeit being nuclear"
+	    spid="CRUM1_MOUSE"
+	    UniProt="Q8VHS2"
+	    >
+</api:variant>
+<!-- rethink this
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-membrane"
+	    gene="Ints1 (Integrator complex subunit 1)"
+	    comment=""
+	    spid="INT1_MOUSE"
+	    UniProt="Q6P4S8"
+	    >
+</api:variant>
+-->
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-inner-membrane"
+	    gene="TMEM201"
+	    comment="please ensure to get the short variant"
+	    spid="Q5SNT2-2"
+	    UniProt="TM201_HUMAN"
+	    >
+	<api:reference
+		type="pubmed"
+		authors="Buch C, Lindberg R, Figueroa R, Gudise S, Onischenko E, Hallberg E."
+		title="An integral protein of the inner nuclear membrane localizes to the mitotic spindle in mammalian cells."
+		journal="J Cell Sci."
+		year="2009"
+		volume="122"
+		number="Pt 12"
+		pages="2100-2107"
+		pmid="19494128"
+	/>
+</api:variant>
+<api:variant
+	    tissue="MDCK"
+	    location="nuclear-outer-membrane,er"
+	    gene="LTC4S (Leukotriene C4 synthase)"
+	    comment=""
+	    spid="LTC4S_HUMAN"
+	    UniProt="Q16873"
+	    >
+</api:variant>
+</api:variantlist>
+<!--
+<api:variant
+	    tissue=""
+	    location=""
+	    gene=""
+	    comment=""
+	    spid=""
+	    UniProt=""
+	    >
+	<api:reference
+		type="pubmed"
+		authors=""
+		title=""
+		journal=""
+		year=""
+		volume=""
+		number=""
+		pages=""
+		pmid=""
+	/>
+	<api:sequence-feature 
+			      id="" 
+			      start=""
+			      end= ""
+			      sequence=""
+			      localisation=""> 
+		<api:impact
+			   action=""
+			   site=""
+			   distribution=""
+			   target=""
+			   />
+		</api:sequence-feature>
+	</api:variant>	
+	-->
+
+
+<!--
+-->
+<!-- Pmid 15469720, 15456847, 15365179, 15319547, 15649128, 15713912 (mutations)-->
