@@ -902,7 +902,7 @@ HA
 	UniProt="O60716"
 	tissue="MDCK"
 	evidence="medium"
-	comment="do not mistake for beta-catenin, it is not fully clear if hthe protein is transported fully independently from others.">
+	comment="do not mistake for beta-catenin, it is not fully clear if the protein is transported fully independently from others.">
 	<api:reference 
 		type="pubmed" 
 		title="Contextual binding of p120ctn to E-cadherin at the basolateral plasma membrane in polarized epithelia." 
@@ -938,12 +938,16 @@ HA
 			   />
 		</api:sequence-feature>	
 </api:variant>
+<!--
+ fixme: acts as homo or heterodimer with caveolin 2, in different directions
+ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2141752/
 <api:variant location="basolateral"
 	gene="CAV1 (caveolin-1)"
 	spid="CAV1_HUMAN"
 	UniProt="Q03135"
 	tissue="MDCK"
-	evidence="strong"
+	evidence="weak"
+	comment="Goes together with cadherins and catenins, not clear where the signal is."
 	>
 	<api:reference	
 		type="pubmed"
@@ -957,6 +961,7 @@ HA
 		pmid="10816572"
 	/>
 </api:variant>
+-->
 <api:variant location="apical"
 	gene="solute carrier family 2"
 	synonyms="facilitated glucose transporter, member 5 (glucose transporter type 5, small intestine) (fructose transporter)"
