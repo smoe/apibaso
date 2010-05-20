@@ -270,7 +270,6 @@ HA
 	title="Apical transport of osteopontin is independent of N-glycosylation and sialylation" />
 </api:variant>
 <api:variant location="apical"
-
    gene="sucrase isomaltase"
    spid="SUIS_HUMAN"
    UniProt="P14410" 
@@ -938,6 +937,25 @@ HA
 			   target="P12830"
 			   />
 		</api:sequence-feature>	
+</api:variant>
+<api:variant location="basolateral"
+	gene="CAV1 (caveolin-1)"
+	spid="CAV1_HUMAN"
+	UniProt="Q03135"
+	tissue="MDCK"
+	evidence="strong"
+	>
+	<api:reference	
+		type="pubmed"
+		title="Caveolin-1 expression inhibits Wnt/beta-catenin/Lef-1 signaling by recruiting beta-catenin to caveolae membrane domains."
+		authors="Galbiati F, Volonte D, Brown AM, Weinstein DE, Ben-Ze'ev A, Pestell RG, Lisanti MP."
+		journal="J Biol Chem"
+		year="2000"
+		volume="275"
+		number="30"
+		pages="23368-22377"
+		pmid="10816572"
+	/>
 </api:variant>
 <api:variant location="apical"
 	gene="solute carrier family 2"
