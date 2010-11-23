@@ -190,6 +190,18 @@ HA
 	title="Rat liver dipeptidylpeptidase IV contains competing apical and basolateral targeting information." 
 	authors="Weisz OA, Machamer CE, Hubbard AL." />
 </api:variant>
+<api:variant location="basolateral"
+	gene="Membrane cofactor protein"
+	synonyms="CD44, MCP, TLX, Trophoblast leukocyte common antigen"
+	sp_id="MCP_HUMAN"
+	UniProt="P15529"
+>
+	<api:reference 
+		journal="J Biol Chem." year="1996" volume="271" number="31" pages="18853-18858"
+		title="Two different cytoplasmic tails direct isoforms of the membrane cofactor protein (CD46) to the basolateral surface of Madin-Darby canine kidney cells."
+		authors="Maisner A, Liszewski MK, Atkinson JP, Schwartz-Albiez R, Herrler G."
+		pmid="8702545" />
+</api:variant>
 <api:variant location="apical"
     gene="p75 neurotrophin receptor" 
     spid="TR16_HUMAN" 
@@ -211,6 +223,7 @@ HA
 		  type="pubmed" 
 		  pmid="1655809" 
 		  title="An internal deletion in the cytoplasmic tail reverses the apical localization of human NGF receptor in transfected MDCK cells." 
+		  year="1995" journal="J. Biol. Chem" volume="270" number="20" pages="12219-12225"
 		  authors="Le Bivic A, Sambuy Y, Patzak A, Patil N, Chao M, Rodriguez-Boulan E." />
    <api:sequence-feature 
 			 id="1655809" 
@@ -744,6 +757,12 @@ HA
      	title="Involvement of VIP36 in intracellular transport and secretion of glycoproteins in polarized Madin-Darby canine kidney (MDCK) cells." 
      	authors="Hara-Kuge S, Ohkura T, Ideo H, Shimada O, Atsumi S, Yamashita K." 
      	pmid="9700159" />
+     <api:reference
+	type="pubmed"
+	journal="J Biol Chem." year="1997" volume="272" number="7" pages="4559-4567"
+	title="The neural cell adhesion molecule expresses a tyrosine-independent basolateral sorting signal."
+	authors="Le Gall AH, Powell SK, Yeaman CA, Rodriguez-Boulan E."
+     />
 </api:variant>
 <api:variant location="basolateral"
 	gene="basigin"
@@ -1213,9 +1232,23 @@ HA
 <api:variant location="basolateral"
 	gene="receptor protein-tyrosine kinase errb-2"
 	synonyms="ERBB2,HER2,NGL,NEU (p185errb2)(c-erbb-2)(tyrosine kinase-type cell surface receptor her2)(mln19),"
-	spid="ERB2_HUMAN"
+	spid="ERBB2_HUMAN"
 	UniProt="P04626"
-	tissue="MDCK">
+	tissue="MDCK"
+	evidence="weak"
+	comment="In polarized epithelia, the co-receptor ErbB2 is often localized to the apical surface by its intramembrane ligand Muc4, thus segregating it from its partner ErbB3, which is sequestered at the lateral surface, co-localized with cadherin junctions (from pmid 17426346).
+
+Interpretation: ErbB2 does not have primary singnals for the sorting but rather goes along with others.">
+	<api:reference
+		type="pubmed"
+		authors="Carraway CA, Carraway KL."
+		title="Sequestration and segregation of receptor kinases in epithelial cells: implications for ErbB2 oncogenesis."
+		journal="Sci STKE"
+		year="2007"
+		volume="2007"
+		number="381"
+		pages="re3"
+		pmid="17426346" />
 	<api:reference 
 		type="pubmed" 
 		title="Basolateral targeting of ERBB2 is dependent on a novel bipartite juxtamembrane sorting signal but independent of the C-terminal ERBIN-binding domain." 
@@ -1548,8 +1581,28 @@ HA
 		pmid="15339978" />
 </api:variant>
 <api:variant location="basolateral"
+	gene="P2Y purinoceptor 1"
+	UniProt="P47900"
+	sp_id="P2RY1_HUMAN"
+	tissue="MDCK"
+	evidence="strong"	
+	comment="todo, paper not accessible, yet, has mutagenesis study, suggests charge at C-terminus to be important."
+>
+	<api:reference
+		type="pubmed"
+		title="Charged residues in the C-terminus of the P2Y1 receptor constitute a basolateral-sorting signal."
+		authors="Wolff SC, Qi AD, Harden TK, Nicholas RA."
+		journal="J Cell Sci."
+		year="2010"
+		volume="123"
+		number="Pt 14"
+		pages="2512-2520"
+		pmid="20592187"
+	/>
+</api:variant>
+<api:variant location="basolateral"
 	gene="P2Y purinoceptor 12"
-	spid="P2YC_HUMAN"
+	spid="P2Y12_HUMAN"
 	UniProt="Q9H244"
 	synonyms=" P2Y12,P2Y12 platelet ADP receptor,P2Y(ADP),ADP-glucose receptor, ADPG-R, P2Y(AC),P2Y(cyc), P2T(AC), SP1999"
 	comment="To investigate the polarized expression of the family of P2Y receptors, we determined the localization of the entire P2Y family following expression in Madin-Darby Canine Kidney (MDCK) Type II cells. Confocal microscopy of polarized monolayers revealed that P2Y1, P2Y11, P2Y12, and P2Y14 receptors reside at the basolateral membrane, P2Y2, P2Y4, and P2Y6 receptors are expressed at the apical membrane, and the P2Y13 receptor is unsorted."
@@ -2293,17 +2346,18 @@ HA
 	comment="human protein studied. "
 	spid="NTCP2_HUMAN"
 	UniProt="Q12908"
+	evidence="strong"
 	>
 	<api:reference
-        type="pubmed"
-	authors="Banerjee A, Swaan PW."
-	title="Membrane topology of human ASBT (SLC10A2) determined by dual label epitope insertion scanning mutagenesis. New evidence for seven transmembrane domains."
-	journal="Biochemistry"
-	year="2006"
-	volume="45"
-	number="3"
-	pages="943-953"
-	pmid="16411770"
+		type="pubmed"
+		authors="Banerjee A, Swaan PW."
+		title="Membrane topology of human ASBT (SLC10A2) determined by dual label epitope insertion scanning mutagenesis. New evidence for seven transmembrane domains."
+		journal="Biochemistry"
+		year="2006"
+		volume="45"
+		number="3"
+		pages="943-953"
+		pmid="16411770"
 	/>
 </api:variant>
 <api:variant
@@ -3170,7 +3224,89 @@ HA
 	    UniProt="Q9UM01"
 	    >
 	</api:variant>
+	<api:variant location="basolateral"
+	    tissue="MDCK"
+	    gene="Coxsackie-adenovirus receptor"
+	    synonyms="CAR, CXADR"
+	    sp_id="CXAR_HUMAN"
+	    UniProt="P78310"
+	    evidence="strong"
+	    comment="Adenoviruses invading the organism via normal digestive or respiratory routes require the Coxsackie-adenovirus receptor (CAR) to infect the epithelial barrier cells. Because CAR is a component of tight junctions and the basolateral membrane and is normally excluded from the apical membrane, most epithelia are resistant to adenoviruses. However, we discovered that a specialized epithelium, the retinal pigment epithelium (RPE), anomalously expressed CAR at the apical surface and was highly susceptible to adenovirus infection. These properties of RPE cells correlated with the absence of the epithelial-specific clathrin adaptor AP1B. Furthermore, knockdown of this basolateral sorting adaptor in adenovirus-resistant MDCK cells promoted apical localization of CAR and increased dramatically Adenovirus infectivity. Targeting assays showed that AP1B is required for accurate basolateral recycling of CAR after internalization. AP1B knock down MDCK cells missorted CAR from recycling endosomes to the apical surface. In summary, we have characterized the cellular machinery responsible for normal sorting of an adenovirus receptor and illustrated how tissue-specific variations in such machinery result in drastic changes in tissue-susceptibility to adenoviruses."
+	>
+		<api:reference
+			journal="Proc Natl Acad Sci U S A." year="2009" volume="106" number="27" pages="11143-11148"
+			title="Clathrin adaptor AP1B controls adenovirus infectivity of epithelial cells."
+			authors="Diaz F, Gravotta D, Deora A, Schreiner R, Schoggins J, Falck-Pedersen E, Rodriguez-Boulan E."
+		/>
+	</api:variant>
+	<api:variant location="apical"
+	    tissue="retinal pigment epithelium (RPE)"
+	    gene="Coxsackie-adenovirus receptor"
+	    synonyms="CAR, CXADR"
+	    sp_id="CXAR_HUMAN"
+	    UniProt="P78310"
+	    evidence="strong"
+	>
+		<api:reference
+			journal="Proc Natl Acad Sci U S A." year="2009" volume="106" number="27" pages="11143-11148"
+			title="Clathrin adaptor AP1B controls adenovirus infectivity of epithelial cells."
+			authors="Diaz F, Gravotta D, Deora A, Schreiner R, Schoggins J, Falck-Pedersen E, Rodriguez-Boulan E."
+		/>
+	</api:variant>
 </api:variantlist>
+
+<!--
+
+J Cell Sci. 1996 Jul;109 ( Pt 7):1875-89.
+Apical beta 1 integrin in polarized MDCK cells mediates tubulocyst formation in response to type I collagen overlay.
+
+Zuk A, Matlin KS.
+
+Renal Unit, Massachusetts General Hospital, Charlestown, USA.
+Abstract
+
+A number of epithelia form tubulocysts in vitro when overlaid with type I collagen gel. Because collagen receptors are generally believed to be expressed on the basolateral domain, the mechanism by which collagen elicits this morphogenetic response from the apical surface is unclear. To investigate the role of beta 1 integrins, the major receptor family for collagen, in this process, we overlaid polarized monolayers of MDCK II cells grown on permeable supports with type I collagen gel and correlated integrin polarity with the polarity of other apical and basolateral membrane markers during tubulocyst formation. Polarized monolayers of one clone of MDCK II cells, referred to as Heidelberg MDCK, initially respond to collagen overlay by stratifying; within 48 hours, lumena develop between the cell layers giving rise to tubulocysts. Tight junctions remain intact during tubulocyst formation because transepithelial electrical resistance does not significantly change. Major alterations are observed, however, in the expression and localization of apical and basolateral membrane markers. beta 1 integrins are necessary for tubulocyst morphogenesis because a function-blocking antibody administered to the apical pole of the cells completely inhibits the formation of these structures. To determine how apical-cell collagen interactions elicit tubulocyst formation, we examined whether beta 1 integrins are mobilized to apical plasma membranes in response to collagen overlay. We found that in the absence of collagen, polarized monolayers of Heidelberg MDCK cells endogenously express on apical plasma membranes a small pool of the beta 1 family, including alpha 2 beta 1 and alpha 3 beta 1. Collagen overlay does not mobilize additional beta 1 integrins to apical domains. If beta 1 integrins are not already apically expressed, as in the C6 MDCK cell line (Schoenenberger et al. (1994) J. Cell Biol. 107, 527-541), beta 1 integrins are not directed apically and tubulocysts do not develop in response to collagen. Thus, interaction of beta 1 integrin pre-existing on apical plasma membranes of polarized epithelia with type I collagen gel is the mechanism by which apical application of collagen elicits the formation of tubulocysts. Depolarized integrins on apical plasma membranes of polarized epithelia may be relevant to the pathogenesis of disease and injury.
+
+PMID: 8832410 [PubMed - indexed for MEDLINE]Free Article
+
+
+
+
+abstractabstractabstract20201Glycobiology. 2010 Nov 9. [Epub ahead of print]
+Protein core dependent glycosaminoglycan modification and glycosaminoglycan dependent polarized sorting in epithelial MDCK cells.
+Hafte TT, Fagereng GL, Prydz K, Grøndahl F, Tveit H.
+Department of Molecular Biosciences, University of Oslo, Box 1041, Blindern, 0316 Oslo, Norway.
+Abstract
+The proteoglycan serglycin (SG) fused to green fluorescent protein (GFP) is secreted predominantly from the apical surface of polarized epithelial Madin-Darby canine kidney (MDCK) cell monolayers, but the minor fraction secreted basolaterally carries more intensely sulfated glycosaminoglycan (GAG) chains (Tveit, H., Dick, G., et al. 2005). To investigate whether the domain with GAG attachment sites in SG 1) is sufficient to drive apical protein sorting and 2) independently generates the sulfation differences observed in the apical and basolateral pathways, the GAG domain of SG was fused into the junction of rat growth hormone (rGH) and GFP, and expressed in MDCK cells, either with or without two N-glycosylation sites in the rGH part. Both variants acquired chondroitin sulfate GAG chains and were secreted predominantly to the apical medium, to the same extent as rGH-GFP with two N-glycosylation sites only, and different from the non-sorted variant lacking glycosylation sites. Transfer of the GAG attachment domain from SG to the new rGH context abolished the differences in sulfation intensity and positions observed for SG in the apical and basolateral secretory routes. Thus, these differences are coded by elements outside the GAG attachment domain.
+PMID: 21062785 [PubMed - as supplied by publisher]
+
+
+Eur J Cell Biol. 2010 Nov;89(11):799-806. Epub 2010 Aug 13.
+Annexin XIIIb guides raft-dependent and -independent apical traffic in MDCK cells.
+Astanina K, Delebinski CI, Delacour D, Jacob R.
+Department of Cell Biology and Cell Pathology, Philipps University of Marburg, Marburg, Germany.
+Abstract
+Epithelial cells are characterized by a polarized organization of their plasma membrane that is divided into apical and basolateral domains. This architecture is maintained by a highly specific cargo sorting machinery that efficiently delivers components to their respective membrane domains. After TGN exit apical cargo is segregated by at least two distinct sorting mechanisms into lipid raft-dependent or lipid raft-independent apical pathways. Annexin XIIIb had been shown to be a member of the lipid raft-dependent trafficking machinery. We now identify this annexin also in raft-independent apical trafficking by mass spectrometry, immunoblotting and confocal microscopy. Annexin XIIIb accumulates in endosomal organelles that are traversed by raft-dependent and raft-independent apical cargo after TGN release. Finally, a specific reduction of annexin XIIIb expression by RNA interference results in a significant decrease in the apical delivery of raft as well as non-raft apical markers. Taken together, our data suggest that annexin XIIIb plays a general role in post Golgi apical trafficking early after TGN release, before the two apical pathways are segregated.
+
+
+Eur J Cell Biol. 2010 Nov;89(11):788-98. Epub 2010 Aug 11.
+Trafficking of galectin-3 through endosomal organelles of polarized and non-polarized cells.
+Schneider D, Greb C, Koch A, Straube T, Elli A, Delacour D, Jacob R.
+Department of Cell Biology and Cell Pathology, Philipps-Universität Marburg, Marburg, Germany.
+Abstract
+In epithelial cells, the β-galactoside-binding lectin galectin-3 mediates the non-raft-dependent glycoprotein targeting to the apical membrane domain. In this study, we aimed to identify intracellular compartments involved in the trafficking of galectin-3. By studying fluorescent fusion proteins in living cells, we could show that galectin-3 accumulates intracellularly in acidified endosomes. Total internal reflection fluorescence microscopy studies of the apical surface of polarized MDCK cells revealed that galectin-3 is enriched in tubular and vesicular Rab11-positive recycling endosomes in the vicinity of the apical cell surface. These endosomal organelles are candidate compartments for the association between galectin-3 and exocytic apical cargo.
+Crown Copyright 2010. Published by Elsevier GmbH. All rights reserved.
+PMID: 20705359 [PubMed - in process]
+
+
+
+
+
+
+
+-->
+
+
 <!--
 <api:variant
 	    tissue=""
