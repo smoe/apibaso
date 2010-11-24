@@ -2262,7 +2262,13 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	spid="LDLR_HUMAN"
 	UniProt="P01130"
 	synonyms="LDLR"
-	comment="Uncertain if human sequence was used"
+	comment="Uncertain if human sequence was used
+
+todo: fetch Cell paper for identification of residues
+
+From 8051216:
+In MDCK cells, basolateral sorting of most membrane proteins has been shown to depend on distinct cytoplasmic domain determinants. These signals can be divided into those which are related to signals for localization at clathrin-coated pits and those which are unrelated. The LDL receptor bears two tyrosine-containing signals, one of each class, that can independently target receptors from the Golgi complex and from endosomes to the basolateral plasma membrane. We have now investigated the other structural features required for the activity of both determinants. We find that both depend, at least in part, on clusters of 1-3 acidic amino acids located on the COOH-terminal side of each tyrosine. While single residues adjacent to each tyrosine were also found to be critical, the two signals differed in that only the coated pit-unrelated signal could tolerate a phenylalanine in place of its tyrosine residue. We also found that the structural requirements for basolateral targeting of the coated pit-related signal were distinct from those required for rapid endocytosis. Apart from sharing a common tyrosine residue, no feature of the NPXY motif for coated pit localization was required for basolateral targeting. We also investigated basolateral targeting of the mouse macrophage Fc receptor (FcRII-B2) which contains a tyrosine-independent coated pit localization signal. Basolateral transport and endocytosis were found to depend on a common dileucine-type motif. Thus, basolateral targeting determinants, like coated pit domains, can contain either tyrosine- or di-leucine-containing signals. The amino acids in the vicinity of these motifs determine whether they function as determinants for endocytosis, basolateral targeting, or both.
+"
 	<api:reference
 		type="pubmed"
 		pmid="10189373"
@@ -2273,6 +2279,173 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		pages="123-139"
 		title="The receptor recycling pathway contains two distinct populations of early endosomes with different sorting functions."
 		authors="Sheff DR, Daro EA, Hull M, Mellman I.">
+	<api:reference
+		type="pubmed"
+		pmid="8402881"
+		journal="Cell"
+		year="1993"
+		volume="74"
+		number="6"
+		pages="1053-1064"
+		title="Common signals control low density lipoprotein receptor sorting in endosomes and the Golgi complex of MDCK cells."
+		authors="Karl Mattera, J.Andrew Whitneya, Ellen M. Yamamotoa and Ira Mellmana"
+	/>
+	<api:reference
+		type="pubmed"
+		journal="J Cell Biol." year="1994" volume="126" number="4" pages="991-1004"
+		title="Structural requirements and sequence motifs for polarized sorting and endocytosis of LDL and Fc receptors in MDCK cells."
+		authors="Matter K, Yamamoto EM, Mellman I."
+		pmid="8051216" />
+</api:variant>
+<api:variant location="basolateral"
+	tissue="MDCK"
+	gene="Low affinity immunoglobulin gamma Fc region receptor II"
+	synonyms="CD32, FcRII-B2, Lymphocyte antigen 17"
+	UniProt="P08101-2"
+	sp_id="FCGR2_MOUSE"
+	comment="the sequence is the slice variant, attention, it differs quite a bit, todo: fetch that paper"
+>
+	<api:reference
+		type="pubmed"
+		journal="J Cell Biol." year="1994" volume="126" number="4" pages="991-1004"
+		title="Structural requirements and sequence motifs for polarized sorting and endocytosis of LDL and Fc receptors in MDCK cells."
+		authors="Matter K, Yamamoto EM, Mellman I."
+		pmid="8051216" />
+</api:variant>
+<api:variant location="basolateral"
+	tissue="MDCK,FRT"
+	gene="Low-density lipoprotein receptor-related protein 1"
+	synonyms="lrp1"
+	UniProt="Q07954"
+	sp_id="LRP1_HUMAN"
+	comment="Low-density lipoprotein receptor-related protein 1 (LRP1) is an endocytic recycling receptor with two cytoplasmic tyrosine-based basolateral sorting signals. Here we show that during biosynthetic trafficking LRP1 uses AP1B adaptor complex to move from a post-TGN recycling endosome (RE) to the basolateral membrane. Then it recycles basolaterally from the basolateral sorting endosome (BSE) involving recognition by sorting nexin 17 (SNX17). In the biosynthetic pathway, Y(29) but not N(26) from a proximal NPXY directs LRP1 basolateral sorting from the TGN. A N(26)A mutant revealed that this NPXY motif recognized by SNX17 is required for the receptor's exit from BSE. An endocytic Y(63)ATL(66) motif also functions in basolateral recycling, in concert with an additional endocytic motif (LL(86,87)), by preventing LRP1 entry into the transcytotic apical pathway. All this sorting information operates similarly in hippocampal neurons to mediate LRP1 somatodendritic distribution regardless of the absence of AP1B in neurons. LRP1 basolateral distribution results then from spatially and temporally segregation steps mediated by recognition of distinct tyrosine-based motifs. We also demonstrate a novel function of SNX17 in basolateral/somatodendritic recycling from a different compartment than AP1B endosomes.
+
+AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
+"
+>
+	<api:reference
+		type="pubmed"
+		journal="Mol Biol Cell."  year="2009" volume="20" number="1" pages="481-497"
+		title="Polarized traffic of LRP1 involves AP1B and SNX17 operating on Y-dependent sorting motifs in different pathways."
+		authors="Donoso M, Cancino J, Lee J, van Kerkhof P, Retamal C, Bu G, Gonzalez A, Cáceres A, Marzolo MP."
+		pmid="19005208"	/>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="29"
+			      end= "29"
+			      sequence="Y"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="A"
+			   distribution="apical"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="38"
+			      end= "39"
+			      sequence="DD"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="AA"
+			   distribution="basolateral 90%"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="43"
+			      end= "44"
+			      sequence="LL"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="AA"
+			   distribution="basolateral 100%"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="60"
+			      end= "60"
+			      sequence="N"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="A"
+			   distribution="basolateral 95%"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="63"
+			      end= "63"
+			      sequence="Y"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="A"
+			   distribution="non-polar"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="66"
+			      end= "66"
+			      sequence="L"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="A"
+			   distribution="non-polar"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="75"
+			      end= "75"
+			      sequence="S"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="A"
+			   distribution="basolateral"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="86"
+			      end= "87"
+			      sequence="LL"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="AA"
+			   distribution="non-polar"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="19005208" 
+			      start="86"
+			      end= "87"
+			      sequence="LL"
+			      localisation="cytoplasmic"> 
+		<api:impact
+			   action="mutate"
+			   sequence="AA"
+			   distribution="non-polar"
+			   target="Q07954"
+			   />
+	</api:sequence-feature>
 </api:variant>
 <api:variant
 	location="apical"
@@ -3115,6 +3288,8 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		    comment="pmid 8207010: Biochemical analysis showed pro-TGF-alpha was expressed on the basolateral surface as either a 17- or 30-kDa species; the 17-kDa forms of both pro-TGF-alpha constructs had basolateral/apical ratios of > 20:1"
 		    spid="TGFA_HUMAN"
 		    UniProt="P01135"
+		    evidence="strong"
+		    comment="todo, fetch article from library"
 		    >
 		<api:reference
 			      type="pubmed"
@@ -3127,6 +3302,12 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 			      pages="16878-16889"
 			      pmid="8207010"
 			      />
+		<api:reference
+			type="pubmed"
+			journal="Exp Cell Res." year="2003" volume="285" number="2" pages="159-174"
+			title="Basolateral sorting of transforming growth factor-alpha precursor in polarized epithelial cells: characterization of cytoplasmic domain determinants."
+			authors="Dempsey PJ, Meise KS, Coffey RJ."
+			pmid="12706112" />
 	</api:variant>	
 	<api:variant
 	    tissue="placental syncytiophoblastic cells"
@@ -3234,6 +3415,7 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	    comment="Adenoviruses invading the organism via normal digestive or respiratory routes require the Coxsackie-adenovirus receptor (CAR) to infect the epithelial barrier cells. Because CAR is a component of tight junctions and the basolateral membrane and is normally excluded from the apical membrane, most epithelia are resistant to adenoviruses. However, we discovered that a specialized epithelium, the retinal pigment epithelium (RPE), anomalously expressed CAR at the apical surface and was highly susceptible to adenovirus infection. These properties of RPE cells correlated with the absence of the epithelial-specific clathrin adaptor AP1B. Furthermore, knockdown of this basolateral sorting adaptor in adenovirus-resistant MDCK cells promoted apical localization of CAR and increased dramatically Adenovirus infectivity. Targeting assays showed that AP1B is required for accurate basolateral recycling of CAR after internalization. AP1B knock down MDCK cells missorted CAR from recycling endosomes to the apical surface. In summary, we have characterized the cellular machinery responsible for normal sorting of an adenovirus receptor and illustrated how tissue-specific variations in such machinery result in drastic changes in tissue-susceptibility to adenoviruses."
 	>
 		<api:reference
+			type="pubmed"
 			journal="Proc Natl Acad Sci U S A." year="2009" volume="106" number="27" pages="11143-11148"
 			title="Clathrin adaptor AP1B controls adenovirus infectivity of epithelial cells."
 			authors="Diaz F, Gravotta D, Deora A, Schreiner R, Schoggins J, Falck-Pedersen E, Rodriguez-Boulan E."
@@ -3248,11 +3430,53 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	    evidence="strong"
 	>
 		<api:reference
+			type="pubmed"
 			journal="Proc Natl Acad Sci U S A." year="2009" volume="106" number="27" pages="11143-11148"
 			title="Clathrin adaptor AP1B controls adenovirus infectivity of epithelial cells."
 			authors="Diaz F, Gravotta D, Deora A, Schreiner R, Schoggins J, Falck-Pedersen E, Rodriguez-Boulan E."
 		/>
 	</api:variant>
+	<api:variant location="basolateral"
+	    tissue="MDCK"
+	    gene="Amphiregulin"
+	    synonyms="AR, Colorectum cell-derived growth factor, CRDGF"
+	    sp_id="AREG_HUMAN"
+	    UniProt="P15514"
+	    comment="Experiments have been performed on the propeptide, more exactly on a C-terminal end to be cleaved off"
+	    evidence="strong"
+	    <api:reference
+		type="pubmed"
+		journal="J Biol Chem." year="2001" volume="276" number="31" pages="29538-29549"
+		title="The proamphiregulin cytoplasmic domain is required for basolateral sorting, but is not essential for constitutive or stimulus-induced processing in polarized Madin-Darby canine kidney cells."
+		authors="Brown CL, Coffey RJ, Dempsey PJ."
+J Biol Chem 2001 Sep 28;276(39):36862.
+		pmid="11382759" />
+<!--	redundant information from paper
+		<api:sequence-feature 
+				      id="11382759" 
+				      start="185"
+				      end= "252"
+				      sequence="SMKTHS MIDSSLSKIA LAAIAAFMSA VILTAVAVIT VQLRRQYVRK YEGEAEERKK LRQENGNVHA IA"
+				      localisation="extracellular,transmembrane,cytoplasmic"> 
+			<api:impact
+				   action="deletion"
+				   distribution="non polar"
+				   target="P15514"
+				   />
+		</api:sequence-feature>
+-->
+		<api:sequence-feature 
+				      id="11382759" 
+				      start="191"
+				      end= "252"
+				      sequence="MIDSSLSKIA LAAIAAFMSA VILTAVAVIT VQLRRQYVRK YEGEAEERKK LRQENGNVHA IA"
+				      localisation="extracellular,transmembrane,cytoplasmic"> 
+			<api:impact
+				   action="deletion"
+				   distribution="non polar"
+				   target="P15514"
+				   />
+		</api:sequence-feature>
 </api:variantlist>
 
 <!--
