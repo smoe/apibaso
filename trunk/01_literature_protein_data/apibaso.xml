@@ -56,6 +56,17 @@
 	   abstract="We have reported previously that the F(X)(6)LL motif in the C termini is essential for export of alpha(2B)-adrenergic (alpha(2B)-AR) and angiotensin II type 1 receptors (AT1Rs) from the endoplasmic reticulum (ER). Here, we further demonstrate that mutation of the F(X)(6)LL motif similarly abolished the cell-surface expression of alpha(2B)-AR, AT1R, alpha(1B)-AR, and beta(2)-AR, suggesting that the F(X)(6)LL motif plays a general role in ER export of G protein-coupled receptors (GPCRs). Mutation of Phe to Val, Leu, Trp, and Tyr, and mutation of LL to FF and VV, markedly inhibited alpha(2B)-AR transport, indicating that the F(X)(6)LL function cannot be fully substituted by other hydrophobic residues. The structural analysis revealed that the Phe residue in the F(X)(6)LL motif is buried in the transmembrane domains and possibly interacts with Ile58 in beta(2)-AR and Val42 in alpha(2B)-AR, whereas the LL motif is exposed to the cytosolic space. Indeed, mutation of Ile58 in beta(2)-AR and Val42 in alpha(2B)-AR markedly disrupted cell surface transport of the receptors. It is noteworthy that the Val and Ile residues are highly conserved among the GPCRs carrying the F(X)(6)LL motif. Furthermore, the Phe mutant exhibited a stronger interaction with ER chaperones and was more potently rescued by physical and chemical treatments than the LL mutant. These data suggest that the Phe residue is probably involved in folding of alpha(2B)-AR and beta(2)-AR, possibly through interaction with other hydrophobic residues in neighboring domains. These data also provide the first evidence implying crucial roles of the C termini possibly through modulating multiple events in anterograde trafficking of GPCRs."
 	    pmid="1911812" />
    </api:motif>
+   <api:motif regex="YY" />
+    
+   </api:motif>
+   <api:motif name="oligomerisation"
+   	location="apical"
+	<api:reference type="pubmed"
+		journal="Traffic" year="2007" volume="8" number="3" pages0"251-258"
+		title="Oligomerization Is a Specific Requirement for Apical Sorting of Glycosyl-Phosphatidylinositol-Anchored Proteins but Not for Non-Raft-Associated Apical Proteins"
+		authors="Paladino S, Sarnataro D, Tivodar S, Zurzolo C."
+		pmid="17233758" />
+   </api:motif>
 </api:motiflist>
 <api:variantlist
 	author="Steffen Moeller moeller@pzr.uni-rostock.de"
@@ -995,12 +1006,14 @@ HA
 	evidence="strong"
 	comment="Di-Leucine motif for basolateral sorting"
 	>
+
 	<api:reference 
 		type="pubmed" 
 		title="Contextual binding of p120ctn to E-cadherin at the basolateral plasma membrane in polarized epithelia." 
 		authors="Miranda KC, Joseph SR, Yap AS, Teasdale RD, Stow JL." 
 		pmid="12923199" />
 	
+	<api:reference type="motif" regex="LL" />
 	<api:sequence-feature 
 			      id="11312273" 
 			      start="587"
@@ -1013,7 +1026,10 @@ HA
 			   distribution="apical"
 			   target="P12830"
 			   />
-		</api:sequence-feature>	
+	</api:sequence-feature>	
+	<api:reference type="pubmed" journal="Cell Adh Migr." year="2010" volume="4" number="2"
+	        pages="176-179" title="Numb: A new player in EMT." authors="Wang Z, Li SS."
+		pmid="20168079" />
 </api:variant>
 <!--
  fixme: acts as homo or heterodimer with caveolin 2, in different directions
@@ -1197,12 +1213,41 @@ HA
 	spid="FOL1_HUMAN"
 	UniProt="P15328"
 	tissue="airway ephitelia"
-	comment="glycosylphosphatidylinositol-linked surface protein,cellular receptor for filoviruses">
+	comment="glycosylphosphatidylinositol-linked surface protein,cellular receptor for filoviruses, todo:find way to formalise experimental evidence presented">
 	<api:reference 
 		type="pubmed" 
 		title="Lentivirus vectors pseudotyped with filoviral envelope glycoproteins transduce airway epithelia from the apical surface independently of folate receptor alpha." 
 		authors="Sinn PL, Hickey MA, Staber PD, Dylla DE, Jeffers SA, Davidson BL, Sanders DA, McCray PB Jr." 
 		pmid="12719583" />
+	<api:reference type="pubmed"
+		journal="J Cell Sci." year="2008" volume="121" number="Pt 24" pages="4001-4007"
+		title="Different GPI-attachment signals affect the oligomerisation of GPI-anchored proteins and their apical sorting."
+		authors="Paladino S, Lebreton S, Tivodar S, Campana V, Tempre R, Zurzolo C."
+		pmid="19056670" />
+</api:variant>
+<api:variant location="basolateral"
+	tissue="MDCK"
+	gene="Major prion protein"
+	synonyms="CD230,PRNP,PRP"
+	spid="PRIO_HUMAN"
+	UniProt="P04156" >
+	<api:reference type="pubmed"
+		journal="J Cell Sci." year="2008" voume="121" number="Pt 24" pages="4001-7"
+		title="Different GPI-attachment signals affect the oligomerisation of GPI-anchored proteins and their apical sorting." authors="Paladino S, Lebreton S, Tivodar S, Campana V, Tempre R, Zurzolo C."
+		pmid="19056670" />
+</api:variant>
+<api:variant location="apical"
+	tissue="MDCK"
+	gene="Complement decay-accelerating factor"
+	synonyms="DAF,CD55"
+	spid="DAF_HUMAN"
+	UniProt="P08174"
+	comment="todo: get paper with details">
+	<api:reference type="pubmed"
+		journal="J. Cell Science" volume="99" number="3" pages="637-640"
+		title="Fusion proteins containing a minimal GPI-attachment signal are apically expressed in transfected MDCK cells"
+		authors="MP Lisanti, IW Caras and E Rodriguez-Boulan" 
+		pmid="1719008" />
 </api:variant>
 <api:variant location="apical"
 	gene="carcinoembryonic antigen-related cell adhesion molecule 1"
@@ -1218,6 +1263,41 @@ HA
 		pmid="12920788" />
 </api:variant>
 <api:variant location="apical"
+	tissue="duodenal enterocytes,human erythrocytes"
+	spid="Q53TN4A"
+	UniProt="CYBR1_HUMAN"
+	comment="todo: determine exact role of MDCK"
+	>
+	<api:reference type="pubmed"
+	/>
+</api:variant>
+<api:variant location="non-polar"
+	tissue="MDCK"
+	spid="COPT1_HUMAN"
+	UniProt="O15431"
+	gene="High affinity copper uptake protein 1"
+	synonyms="SLC31A1, hCTR1, human Copper Transporter 1">
+	<api:reference type="pubmed"
+		journal="J Biol Chem." year="2007" volume="282" number="36" pages="26471-26480"
+		title="Human copper transporter hCTR1 mediates basolateral uptake of copper into enterocytes: implications for copper homeostasis."
+		authors="Zimnicka AM, Maryon EB, Kaplan JH."
+		pmid="17627945" />
+	/>
+</api:variant>
+<api:variant location="basolateral"
+	tissue="Caco2"
+	spid="COPT1_HUMAN"
+	UniProt="O15431"
+	gene="High affinity copper uptake protein 1"
+	synonyms="SLC31A1, hCTR1, human Copper Transporter 1">
+	<api:reference type="pubmed"
+		journal="J Biol Chem." year="2007" volume="282" number="36" pages="26471-26480"
+		title="Human copper transporter hCTR1 mediates basolateral uptake of copper into enterocytes: implications for copper homeostasis."
+		authors="Zimnicka AM, Maryon EB, Kaplan JH."
+		pmid="17627945" />
+	/>
+</api:variant>
+<api:variant location="apical"
 	gene="mucin 5 subtype ac,tracheobrachial(major airway glyoprotein)(fragment)"
 	spid="MU5A_HUMAN"
 	UniProt="P98088"
@@ -1227,6 +1307,19 @@ HA
 		title="Requirement of both mucins and proteoglycans in cell-cell dissociation and invasiveness of colon carcinoma HT-29 cells." 
 		authors="Truant S, Bruyneel E, Gouyer V, De Wever O, Pruvot FR, Mareel M, Huet G." 
 		pmid="12640674" />
+</api:variant>
+<api:variant location="apical"
+	gene="Mucin 1"
+	spid="MUC1_HUMAN"
+	UniProt="P15941"
+	synonyms="MUC-1, Breast carcinoma-associated antigen DF3, Episialin, H23AG,. PEMT"
+	tissue="simple secretory epithelia"
+	comment="todo: clarify tissue and formalise experimental evidence (free paper)" >
+	<api:reference type="pubmed"
+		journal="J Biol Chem." year="1996" volume="271" number="4" pages="2332-40"
+		title="The epithelial mucin MUC1 contains at least two discrete signals specifying membrane localization in cells."
+		authors="Pemberton LF, Rughetti A, Taylor-Papadimitriou J, Gendler SJ."
+		pmid="8567697" />
 </api:variant>
 <api:variant
 	location="apical"
@@ -1884,6 +1977,21 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		authors="Takata K, Tajika Y, Matsuzaki T, Aoki T, Suzuki T, Abduxukur A, Hagiwara H." 
 		pmid="15557733" />
 </api:variant>
+<api:variant location="non-polar"
+	gene="Aquaporin-2"
+	synonyms="APQ-2"
+	apicalSortingBy="FAPP2"
+	sp_id="AQP2_HUMAN"
+	UniProt="P41181"
+	comment="There seem to be two competing signals with no clear winner. The paper shows how the sorting to the apical region can be stimulated selectively. Not sure about the source species."
+	<api:reference type="pubmed"
+		journal="Am J Physiol Cell Physiol." year="2009" volume="297" number="6" pages="C1389-C1396"
+		title="FAPP2 is required for aquaporin-2 apical sorting at trans-Golgi network in polarized MDCK cells."
+		authors="Yui N, Okutsu R, Sohara E, Rai T, Ohta A, Noda Y, Sasaki S, Uchida S."
+		pmid="19794145" />
+	
+/>
+
 <api:variant location="basolateral"
 	gene="Short transient receptor potential channel 1"
 	spid="TRPC1_HUMAN"
@@ -2756,12 +2864,12 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 	    tissue="MDCK"
 	    location="apical"
 	    gene="sodium-vitamin C cotransporters, SVCT1"
-	    comment=""
+	    comment="todo: get the second paper with experimental evidence"
 	    spid="S23A1_HUMAN"
 	    UniProt="Q9UHI7"
+	    evidence="strong"
 	    >
-	<api:reference
-		      type="pubmed"
+	<api:reference type="pubmed"
 		      authors="Boyer JC, Campbell CE, Sigurdson WJ, Kuo SM."
 		      title="Polarized localization of vitamin C transporters, SVCT1 and SVCT2, in epithelial cells."
 		      journal="Biochem Biophys Res Commun"
@@ -2769,8 +2877,12 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 		      volume="334"
 		      number=""
 		      pages="150-156"
-		      pmid="15993839"
-		      />
+		      pmid="15993839" />
+	<api:reference type="pubmed"
+		journal="Biochemistry" year="2009" volume="48" number="13" pages="2969-2980"
+		title="Hierarchal contribution of N- and C-terminal sequences to the differential localization of homologous sodium-dependent vitamin C transporters, SVCT1 and SVCT2, in epithelial cells."
+		authors="Varma S, Sobey K, Campbell CE, Kuo SM." pmid="19216494" />
+
 </api:variant>
 <api:variant
 	    tissue="MDCK"
@@ -2779,9 +2891,9 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 	    comment=""
 	    spid="S23A2_HUMAN"
 	    UniProt="Q9UGH3"
+	    evidence="strong"
 	    >
-	<api:reference
-		      type="pubmed"
+	<api:reference type="pubmed"
 		      authors="Boyer JC, Campbell CE, Sigurdson WJ, Kuo SM."
 		      title="Polarized localization of vitamin C transporters, SVCT1 and SVCT2, in epithelial cells."
 		      journal="Biochem Biophys Res Commun"
@@ -2789,8 +2901,11 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 		      volume="334"
 		      number=""
 		      pages="150-156"
-		      pmid="15993839"
-		      />
+		      pmid="15993839" />
+	<api:reference type="pubmed"
+		journal="Biochemistry" year="2009" volume="48" number="13" pages="2969-2980"
+		title="Hierarchal contribution of N- and C-terminal sequences to the differential localization of homologous sodium-dependent vitamin C transporters, SVCT1 and SVCT2, in epithelial cells."
+		authors="Varma S, Sobey K, Campbell CE, Kuo SM." pmid="19216494" />
 </api:variant>
 <api:variant
 	    tissue="MDCK"
