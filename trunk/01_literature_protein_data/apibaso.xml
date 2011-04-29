@@ -75,7 +75,7 @@
 <!--
 #location,protein name,spid,gene name,PubMED
 #apical,influenza hemagglutinin,?,?,"8654387, could not follow reference (1996 EMBO)"
-apical,lactase phlorizinhydrolase,LPH_HUMAN (P09848),"lct,lph",11566104,"MDCK, not DIG associated"
+
 
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2148223/?tool=pubmed
 
@@ -84,6 +84,22 @@ HA
 	http://jcb.rupress.org/cgi/content/abstract/111/3/987
 
 -->
+
+<api:variant location="apical"
+	gene="Lactase-phlorizin hydrolase"
+	spid="LPH_HUMAN"
+	UniProt="P09848"
+	synonyms="lct,lph"
+	comment="MDCK, not DIG associated"
+	tissue="MDCK">
+	<api:reference type="pubmed" pmid="16488876"
+		title="Requirement for galectin-3 in apical protein sorting."
+		authors="Delacour D, Cramm-Behrens CI, Drobecq H, Le Bivic A, Naim HY, Jacob R."
+		journal="Curr Biol." year="2006" volume="16" number="4" pages="408-414" />
+	<api:reference type="pubmed" pmid="11566104" />
+</api:variant>
+
+
 <api:variant location="apical"
 	gene="Endolyn"
 	spid="MUC24_HUMAN"
@@ -352,23 +368,27 @@ HA
 	title="Apical transport of osteopontin is independent of N-glycosylation and sialylation" />
 </api:variant>
 <api:variant location="apical"
-   gene="sucrase isomaltase"
-   spid="SUIS_HUMAN"
-   UniProt="P14410" 
-   synonyms="si"
-   tissue="MDCK"
-   evidence="strong"
-   comment="10692463 proposes sorting signal: O-glycosylation of a stretch of 12 amino acids (Ala(37)-Pro(48)) juxtapose the membrane anchor is required in conjunction with the membrane anchoring domain for correct targeting of pro-SI to the apical membrane. Other O-glycosylated domains within the stalk (Ala(49)-Pro(57)) are not sufficient for apical sorting.">
-   <api:reference 
-   	type="pubmed" 
-	pmid="10692463" 
-	title="Structural determinants required for apical sorting of an intestinal brush-border membrane protein." 
-      	authors="Jacob R, Alfalah M, Grunberg J, Obendorf M, Naim HY." />
-   <api:reference 
-   	type="pubmed" 
-	pmid="11566104" 
-	title="Apical membrane proteins are transported in distinct vesicular carriers." 
-	authors="Jacob R, Naim HY." />
+	gene="sucrase isomaltase"
+	spid="SUIS_HUMAN"
+	UniProt="P14410" 
+	synonyms="si"
+	tissue="MDCK"
+	evidence="strong"
+	comment="10692463 proposes sorting signal: O-glycosylation of a stretch of 12 amino acids (Ala(37)-Pro(48)) juxtapose the membrane anchor is required in conjunction with the membrane anchoring domain for correct targeting of pro-SI to the apical membrane. Other O-glycosylated domains within the stalk (Ala(49)-Pro(57)) are not sufficient for apical sorting.">
+	<api:reference 
+		type="pubmed" 
+		pmid="10692463" 
+		title="Structural determinants required for apical sorting of an intestinal brush-border membrane protein." 
+		authors="Jacob R, Alfalah M, Grunberg J, Obendorf M, Naim HY." />
+	<api:reference 
+		type="pubmed" 
+		pmid="11566104" 
+		title="Apical membrane proteins are transported in distinct vesicular carriers." 
+		authors="Jacob R, Naim HY." />
+	<api:reference type="pubmed" pmid="16488876"
+		title="Requirement for galectin-3 in apical protein sorting."
+		authors="Delacour D, Cramm-Behrens CI, Drobecq H, Le Bivic A, Naim HY, Jacob R."
+		journal="Curr Biol." year="2006" volume="16" number="4" pages="408-414" />
 </api:variant>
 <api:variant location="basolateral" 
 	gene="human calcitonin receptor"
@@ -3650,6 +3670,43 @@ J Biol Chem 2001 Sep 28;276(39):36862.
 				   target="P15514"
 				   />
 		</api:sequence-feature>
+	</api:variant>
+	<api:variant location="basolateral" tissue="MDCK"
+		gene="Monocarboxylate transporter 3 (MCT3)"
+		synonyms="SLC16A8"
+		sp_id="MOT3_HUMAN" UniProt="O95907"
+		evidence="strong"
+		commend="C-terminal region is important, need to look at full paper (not freely accessible)"
+		<api:reference
+			title="Basolateral sorting signals regulating tissue-specific polarity of heteromeric monocarboxylate transporters in epithelia."
+			authors="Castorino JJ, Deborde S, Deora A, Schreiner R, Gallagher-Colombo SM, Rodriguez-Boulan E, Philp NJ."
+			journal="Traffic" year="2011" volume="12" number="4" pages="483-498" doi="10.1111/j.1600-0854.2010.01155.x"
+			pmid="21199217" />
+	</api:variant>
+	<api:variant location="basolateral" tissue="MDCK"
+		gene="Monocarboxylate transporter 4 (MCT4)"
+		synonyms="SLC16A3"
+		sp_id="MOT4_HUMAN" UniProt="O15427"
+		evidence="strong"
+		commend="C-terminal region is important, need to look at full paper (not freely accessible)"
+		<api:reference
+			title="Basolateral sorting signals regulating tissue-specific polarity of heteromeric monocarboxylate transporters in epithelia."
+			authors="Castorino JJ, Deborde S, Deora A, Schreiner R, Gallagher-Colombo SM, Rodriguez-Boulan E, Philp NJ."
+			journal="Traffic" year="2011" volume="12" number="4" pages="483-498" doi="10.1111/j.1600-0854.2010.01155.x"
+			pmid="21199217" />
+	</api:variant>
+	<api:variant location="apolar" tissue="MDCK"
+		gene="Monocarboxylate transporter 1 (MCT1)"
+		synonyms="SLC16A1"
+		sp_id="MOT1_HUMAN" UniProt="P53985"
+		evidence="strong"
+		commend="In MDCK dragged in by CD147 to basolateral domain, may appear apical in other tissues"
+		<api:reference
+			title="Basolateral sorting signals regulating tissue-specific polarity of heteromeric monocarboxylate transporters in epithelia."
+			authors="Castorino JJ, Deborde S, Deora A, Schreiner R, Gallagher-Colombo SM, Rodriguez-Boulan E, Philp NJ."
+			journal="Traffic" year="2011" volume="12" number="4" pages="483-498" doi="10.1111/j.1600-0854.2010.01155.x"
+			pmid="21199217" />
+	</api:variant>
 </api:variantlist>
 
 <!--
