@@ -119,6 +119,20 @@ HA
 		authors="Ihrke G, Bruns JR, Luzio JP, Weisz OA."
 	>
 </api:variant>
+
+<api:variant location="apical"
+	gene="Probable G-protein coupled receptor 114 (gp114)"
+	spid="GP114_HUMAN"
+	UniProt="Q8IZF4"
+	synonyms="PGR27"
+	evidence="weak"
+	comment="No transcytosis (2335561)."
+	tissue="MDCK">
+	<api:reference type="pubmed" pmid="2335561"
+		journal="J Cell Biol." year="1990" volume="110" number="5" pages="1533-1539" />
+/>
+
+
 <api:variant location="apical"
 	gene="hemagglutinin"
 	spid="Q1I2B9_9INFA"
@@ -1032,6 +1046,9 @@ HA
 		title="Contextual binding of p120ctn to E-cadherin at the basolateral plasma membrane in polarized epithelia." 
 		authors="Miranda KC, Joseph SR, Yap AS, Teasdale RD, Stow JL." 
 		pmid="12923199" />
+
+	<api:reference type="pubmed" pmid="2335561"
+		journal="J Cell Biol." year="1990" volume="110" number="5" pages="1533-1539" />
 	
 	<api:reference type="motif" regex="LL" />
 	<api:sequence-feature 
