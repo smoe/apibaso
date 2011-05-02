@@ -68,6 +68,26 @@
 		pmid="17233758" />
    </api:motif>
 </api:motiflist>
+
+<!--
+
+Things to check out:
+
+ Transcytosis: http://jcb.rupress.org/content/111/6/2909.full.pdf+html
+
+Find what p58 is in
+	<api:reference type="pubmed" 
+		title="Lipid rafts and apical membrane traffic."
+		authors="Füllekrug J, Simons K."
+		journal="Ann N Y Acad Sci." year="2004" issue="1014" pages="164-169"
+		pmid="15153431" />
+
+Make sure everything from
+ 	http://jcs.biologists.org/content/117/25/5955.long
+(a nice review by Simons) is in
+
+-->
+
 <api:variantlist
 	author="Steffen Moeller moeller@pzr.uni-rostock.de"
 	version="0.01"
@@ -116,8 +136,7 @@ HA
 		number="22"
 		pages="6256-6264"
 		title="Competing sorting signals guide endolyn along a novel route to lysosomes in MDCK cells."
-		authors="Ihrke G, Bruns JR, Luzio JP, Weisz OA."
-	>
+		authors="Ihrke G, Bruns JR, Luzio JP, Weisz OA." />
 </api:variant>
 
 <api:variant location="apical"
@@ -125,12 +144,17 @@ HA
 	spid="GP114_HUMAN"
 	UniProt="Q8IZF4"
 	synonyms="PGR27"
-	evidence="weak"
+	evidence="strong"
 	comment="No transcytosis (2335561)."
 	tissue="MDCK">
 	<api:reference type="pubmed" pmid="2335561"
 		journal="J Cell Biol." year="1990" volume="110" number="5" pages="1533-1539" />
-/>
+	<api:reference type="pubmed" 
+		title="Lipid rafts and apical membrane traffic."
+		authors="Füllekrug J, Simons K."
+		journal="Ann N Y Acad Sci." year="2004" issue="1014" pages="164-169"
+		pmid="15153431" />
+</api:variant>
 
 
 <api:variant location="apical"
@@ -356,7 +380,7 @@ HA
 	gene="ERGIC-53 protein [Precursor" 
      	spid="ER53_HUMAN"
      	UniProt="P49257"
-     	synonyms=" ER-Golgi intermediate compartment 53 kDa protein; Lectin, mannose-binding 1; Gp58; Intracellular mannose specific lectin MR60"
+     	synonyms="ER-Golgi intermediate compartment 53 kDa protein; Lectin, mannose-binding 1; Gp58; Intracellular mannose specific lectin MR60"
      	attachment=""
      	tissue="MDCK"
     	comment="omission of golgi retention domain, study on chimera">
@@ -912,7 +936,7 @@ HA
 			     basolateral|YEKRRKPDQTLDEDDPGAAALKGSGSHLNDKDKNVRQRNAT
 			     apical|YEKRRKPDQTLPGAAPLKGSGSHLNDKDKNVRQRNAT
 			     basolateral|YEKRRKPDQTLAAAAPGAAPLKGSGSHLNDKDKNVRQRNAT
-			     non-polar|YEKRRKPDQTLDEDDPLKGSGSHLNDKDKNVRQRNAT
+			     apolar|YEKRRKPDQTLDEDDPLKGSGSHLNDKDKNVRQRNAT
 			     basolateral|YEKRRKPDQALDEDDPGAAPLKGSGSHLNDKDKNVRQRNAT
 			     basolateral|YEKRRKPDQTLDEDDPGAAPIKGSGSHLNDKDKNVRQRNAT"
 			     />
@@ -1006,7 +1030,7 @@ HA
 			   apical|KKKQSSLTRAVENIQINEEDKEREFQEV
 			   apical|KKKQSSLTRAVKEREFQEV
 			   apical|KKKQNEISMLQQKEREFQEV
-			   non-polar|KKKQSSLTRAVNEISMLQQKEREFQEV
+			   apolar|KKKQSSLTRAVNEISMLQQKEREFQEV
 			   basolateral|KKKQSSLTRAVENIQINEEDNEIAMLQQKEREFQEV
 			   basolateral|KKKQSSLTRAVENIQINEEDNEIDMLQQKEREFQEV
 			   apical|KKKQSSLTRAVENIQINEEDNEISMAQQKEREFQEV
@@ -1014,7 +1038,7 @@ HA
 			   basoalteral|KKKQSSLTRAVENIQINEEDNEISALQQKEREFQEV
 			   basoalteral|KKKQSSLTRAVENIQINEKDNEISMLQQKEREFQEV
 			   basoalteral|KKKQSSLTRAVENIQINEEDNAISMLQQKEREFQEV
-			   non-polar|KKKQSSLTRAVENIQINAAANEISMLQQKEREFQEV"/>
+			   apolar|KKKQSSLTRAVENIQINAAANEISMLQQKEREFQEV"/>
 	</api:sequence-feature>
 </api:variant>
 <api:variant location="basolateral"
@@ -1308,7 +1332,7 @@ HA
 	<api:reference type="pubmed"
 	/>
 </api:variant>
-<api:variant location="non-polar"
+<api:variant location="apolar"
 	tissue="MDCK"
 	spid="COPT1_HUMAN"
 	UniProt="O15431"
@@ -1437,6 +1461,12 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		number="381"
 		pages="re3"
 		pmid="17426346" />
+	<api:reference
+		type="pubmed" pmid="20589763"
+		title="Early response to ErbB2 over-expression in polarized Caco-2 cells involves partial segregation from ErbB3 by relocalization to the apical surface and initiation of survival signaling."
+		url="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3075438/?tool=pubmed"
+		authors="Pfister AB, Wood RC, Salas PJ, Zea DL, Ramsauer VP."
+		journal="J Cell Biochem." year="2010" volume="111" number="3" pages="643-652" />
 	<api:reference 
 		type="pubmed" 
 		title="Basolateral targeting of ERBB2 is dependent on a novel bipartite juxtamembrane sorting signal but independent of the C-terminal ERBIN-binding domain." 
@@ -1454,14 +1484,22 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 					 distribution="basolateral"
 					 target="uniprot:P08138"
 					/>
-		      </api:sequence-feature>
+	</api:sequence-feature>
 </api:variant>
 <api:variant location="basolateral"
+	tissue="MDCK,Caco-2"
 	gene="receptor protein-tyrosine kinase errb-3"
 	synonyms="ERBB3,HER3 (p185errb3)(c-erbb-3)(tyrosine kinase-type cell surface receptor her3)"
 	spid="ERB3_HUMAN"
 	UniProt="P21860"
-	comment="differentiated human airway epithelia">
+	comment="differentiated human airway epithelia"
+	evidence="strong">
+	<api:reference
+		type="pubmed" pmid="20589763"
+		title="Early response to ErbB2 over-expression in polarized Caco-2 cells involves partial segregation from ErbB3 by relocalization to the apical surface and initiation of survival signaling."
+		url="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3075438/?tool=pubmed"
+		authors="Pfister AB, Wood RC, Salas PJ, Zea DL, Ramsauer VP."
+		journal="J Cell Biochem." year="2010" volume="111" number="3" pages="643-652" />
 	<api:reference 
 		type="pubmed" 
 		title="Segregation of receptor and ligand regulates activation of epithelial growth factor receptor." 
@@ -1633,7 +1671,7 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		<api:impact
 			   action="deletion"
 			   site="cytoplamsic"
-			   distribution="non-polar"
+			   distribution="apolar"
 			   target="P13569"
 			   />
 		</api:sequence-feature>
@@ -1774,6 +1812,7 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	sp_id="P2RY1_HUMAN"
 	tissue="MDCK"
 	evidence="strong"	
+	synonyms="P2Y1, P2Y(1)"
 	comment="todo, paper not accessible, yet, has mutagenesis study, suggests charge at C-terminus to be important."
 >
 	<api:reference
@@ -1832,13 +1871,17 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	spid="P2Y2_HUMAN"
 	UniProt="P41231"
 	synonyms="P2Y2, P2U purinoceptor 1, P2U1, ATP receptor, Purinergic receptor"
-	comment="To investigate the polarized expression of the family of P2Y receptors, we determined the localization of the entire P2Y family following expression in Madin-Darby Canine Kidney (MDCK) Type II cells. Confocal microscopy of polarized monolayers revealed that P2Y1, P2Y11, P2Y12, and P2Y14 receptors reside at the basolateral membrane, P2Y2, P2Y4, and P2Y6 receptors are expressed at the apical membrane, and the P2Y13 receptor is unsorted."
+	comment="To investigate the polarized expression of the family of P2Y receptors, we determined the localization of the entire P2Y family following expression in Madin-Darby Canine Kidney (MDCK) Type II cells. Confocal microscopy of polarized monolayers revealed that P2Y1, P2Y11, P2Y12, and P2Y14 receptors reside at the basolateral membrane, P2Y2, P2Y4, and P2Y6 receptors are expressed at the apical membrane, and the P2Y13 receptor is unsorted. TODO: follow 'The apical targeting..' paper"
 	tissue="spleen, small intestine">
 	<api:reference 
 		type="pubmed" 
 		title="Polarized expression of human P2Y receptors in epithelial cells from kidney, lung, and colon." 
 		authors="Wolff SC, Qi AD, Harden TK, Nicholas RA." 
 		pmid="15525684" />
+	<api:reference
+		type="pubmed"
+		title="The Apical Targeting Signal of the P2Y2 Receptor Is Located in Its First Extracellular Loop"
+		journal="J. Biol. Chem." year="2005" volume="280" pages="29169-29175" />
 </api:variant>
 <api:variant location="apical"
 	gene="P2Y purinoceptor 4"
@@ -2014,20 +2057,19 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		authors="Takata K, Tajika Y, Matsuzaki T, Aoki T, Suzuki T, Abduxukur A, Hagiwara H." 
 		pmid="15557733" />
 </api:variant>
-<api:variant location="non-polar"
+<api:variant location="bipolar"
 	gene="Aquaporin-2"
 	synonyms="APQ-2"
 	apicalSortingBy="FAPP2"
 	sp_id="AQP2_HUMAN"
 	UniProt="P41181"
-	comment="There seem to be two competing signals with no clear winner. The paper shows how the sorting to the apical region can be stimulated selectively. Not sure about the source species."
+	comment="There seem to be two competing signals with no clear winner. The paper shows how the sorting to the apical region can be stimulated selectively. Not sure about the source species.">
 	<api:reference type="pubmed"
 		journal="Am J Physiol Cell Physiol." year="2009" volume="297" number="6" pages="C1389-C1396"
 		title="FAPP2 is required for aquaporin-2 apical sorting at trans-Golgi network in polarized MDCK cells."
 		authors="Yui N, Okutsu R, Sohara E, Rai T, Ohta A, Noda Y, Sasaki S, Uchida S."
 		pmid="19794145" />
-	
-/>
+</api:variant>
 
 <api:variant location="basolateral"
 	gene="Short transient receptor potential channel 1"
@@ -2593,7 +2635,7 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 		<api:impact
 			   action="mutate"
 			   sequence="A"
-			   distribution="non-polar"
+			   distribution="apolar"
 			   target="Q07954"
 			   />
 	</api:sequence-feature>
@@ -2606,7 +2648,7 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 		<api:impact
 			   action="mutate"
 			   sequence="A"
-			   distribution="non-polar"
+			   distribution="apolar"
 			   target="Q07954"
 			   />
 	</api:sequence-feature>
@@ -2632,7 +2674,7 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 		<api:impact
 			   action="mutate"
 			   sequence="AA"
-			   distribution="non-polar"
+			   distribution="apolar"
 			   target="Q07954"
 			   />
 	</api:sequence-feature>
@@ -2645,7 +2687,7 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 		<api:impact
 			   action="mutate"
 			   sequence="AA"
-			   distribution="non-polar"
+			   distribution="apolar"
 			   target="Q07954"
 			   />
 	</api:sequence-feature>
@@ -3716,7 +3758,7 @@ J Biol Chem 2001 Sep 28;276(39):36862.
 		gene="Monocarboxylate transporter 1 (MCT1)"
 		synonyms="SLC16A1"
 		sp_id="MOT1_HUMAN" UniProt="P53985"
-		evidence="strong"
+		evidence="moderate"
 		commend="In MDCK dragged in by CD147 to basolateral domain, may appear apical in other tissues"
 		<api:reference
 			title="Basolateral sorting signals regulating tissue-specific polarity of heteromeric monocarboxylate transporters in epithelia."
