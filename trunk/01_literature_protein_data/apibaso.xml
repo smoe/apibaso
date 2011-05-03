@@ -539,8 +539,21 @@ achieve polarized expression because of sequences within their C-terminal tails
 		authors="Renold A, Cescato R, Beuret N, Vogel LK, Wahlberg JM, Brown JL, Fiedler K, Spiess M." 
 		pmid="10734069" />
 </api:variant>
+<api:variant location="basolateral"
+	gene="Glycoprotein G"
+	synonym="vesicular stomatitis virus G; VSVG"
+	tissue="MDCK,FRT"
+	UniProt="P03522"
+	dependend="AP-1B"
+	spid="VGLG_VSIVA">
+	<api:reference type="pubmed" pmid="17881725"
+		journal="Mol Biol Cell." year="2007" volume="18" number="12" pages="4872-84"
+		title="Antibody to AP1B adaptor blocks biosynthetic and recycling routes of basolateral proteins at recycling endosomes."
+		authors="Cancino J, Torrealba C, Soza A, Yuseff MI, Gravotta D, Henklein P, Rodriguez-Boulan E, González A." />
+</api:variant>
 <api:variant location="apical" 
 	gene="Muscarinic acetylcholine receptor 2"
+	synonyms="M2 receptor"
 	spid="ACM2_HUMAN" 
 	UniProt="P08172"
 	synonyms="chrm2"
