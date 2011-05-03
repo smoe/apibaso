@@ -90,6 +90,8 @@ Good overview on patterns
 http://jcb.rupress.org/content/177/3/477.full
 and subtypes of sorting
 
+Get data from GeneOntology in
+http://gowiki.tamu.edu/wiki/index.php/Category:GO:0009925_!_basal_plasma_membrane
 
 -->
 
@@ -108,6 +110,24 @@ HA
 	http://www.uniprot.org/update?entry=Q1I2B9#
 	http://jcb.rupress.org/cgi/content/abstract/111/3/987
 
+http://www.jbc.org/content/280/32/29169.full#sec-2 : 
+including rhodopsin (28),
+Chuang, J. Z., and Sung, C. H. (1998) J. Cell Biol. 142, 1245-1256
+http://www.jbc.org/cgi/ijlink?linkType=ABST&journalCode=jcb&resid=142/5/1245
+
+three peptide hormone receptors (thyroid stimulating hormone,
+Beau, I., Misrahi, M., Gross, B., Vannier, B., Loosfelt, H., Hai, M. T., Pichon, C., and Milgrom, E. (1997) J. Biol. Chem. 272, 5241-5248
+http://www.jbc.org/cgi/ijlink?linkType=ABST&journalCode=jbc&resid=272/8/5241
+
+ leutinizing hormone,
+Beau, I., Groyer-Picard, M. T., Le Bivic, A., Vannier, B., Loosfelt, H., Milgrom, E., and Misrahi, M. (1998) J. Biol. Chem. 273, 18610-18616
+http://www.jbc.org/cgi/ijlink?linkType=ABST&journalCode=jbc&resid=273/29/18610
+
+and follicle-stimulating hormone receptors)
+Beau, I., Groyer-Picard, M. T., Desroches, A., Condamine, E., Leprince, J., Tome, J. P., Dessen, P., Vaudry, H., and Misrahi, M. (2004) Mol. Endocrinol. 18, 733-746
+http://www.jbc.org/cgi/ijlink?linkType=ABST&journalCode=mend&resid=18/3/733
+
+achieve polarized expression because of sequences within their C-terminal tails
 -->
 
 <api:variant location="apical"
@@ -1875,6 +1895,63 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		title="Polarized expression of human P2Y receptors in epithelial cells from kidney, lung, and colon." 
 		authors="Wolff SC, Qi AD, Harden TK, Nicholas RA." 
 		pmid="15525684" />
+<!--
+        10         20         30         40         50         60 
+MINSTSTQPP DESCSQNLLI TQQIIPVLYC MVFIAGILLN GVSGWIFFYV PSSKSFIIYL 
+
+        70         80         90        100        110        120 
+KNIVIADFVM SLTFPFKILG DSGLGPWQLN VFVCRVSAVL FYVNMYVSIV FFGLISFDRY 
+
+       130        140        150        160        170        180 
+YKIVKPLWTS FIQSVSYSKL LSVIVWMLML LLAVPNIILT NQSVREVTQI KCIELKSELG 
+
+       190        200        210        220        230        240 
+RKWHKASNYI FVAIFWIVFL LLIVFYTAIT KKIFKSHLKS SRNSTSVKKK SSRNIFSIVF 
+
+       250        260        270        280        290        300 
+VFFVCFVPYH IARIPYTKSQ TEAHYSCQSK EILRYMKEFT LLLSAANVCL DPIIYFFLCQ 
+
+       310        320        330 
+PFREILCKKL HIPLKAQNDL DISRIKRGNT TLESTDTL 
+-->
+</api:variant>
+<api:variant location="apolar"
+	gene="B2-bradykinin (BK2) receptor"
+	spid="BKRB2_HUMAN" UniProt="P30411"
+	synonyms="BDKRB2, BKR2"
+	tissue="MDCK">
+	<api:reference
+		type="pubmed" pmid="15908695"
+		title="The Apical Targeting Signal of the P2Y2 Receptor Is Located in Its First Extracellular Loop*"
+		journal="J. Biol. Chem." year="2005" volume="280" number="32" pages="29169-29175" />
+	<api:sequence-feature 
+		id="P41231" start="315" end="377"
+		sequence="RFARDA KPPTGPSPAT PARRRLGLRR SDRTDMQRIE DVLGSSEDSR RTESTPAGSE NTKDIRL" 
+		localisation="cytoplasmic" >
+		<api:impact
+			   action="substitution"
+			   start="314"
+			   end="391"
+			   site="cytoplasmic"
+			   distribution="apolar"
+			   target="P30411"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="P51582" 
+			      start="313"
+			      end= "360"
+			      sequence="YRRQLRQL CGGGKPQPRT AASSLALVSL PEDSSCRWAA TPQDSSCSTP"
+			      localisation="cytoplasmic" 
+			      />
+		<api:impact
+			   action="substitution"
+			   start="314"
+			   end="391"
+			   distribution="apical"
+			   target="P30411"
+			   />
+	</api:sequence-feature>
 </api:variant>
 <api:variant location="apical"
 	gene="P2Y purinoceptor 2"
@@ -1882,7 +1959,11 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	UniProt="P41231"
 	synonyms="P2Y2, P2U purinoceptor 1, P2U1, ATP receptor, Purinergic receptor"
 	comment="To investigate the polarized expression of the family of P2Y receptors, we determined the localization of the entire P2Y family following expression in Madin-Darby Canine Kidney (MDCK) Type II cells. Confocal microscopy of polarized monolayers revealed that P2Y1, P2Y11, P2Y12, and P2Y14 receptors reside at the basolateral membrane, P2Y2, P2Y4, and P2Y6 receptors are expressed at the apical membrane, and the P2Y13 receptor is unsorted. TODO: follow 'The apical targeting..' paper"
-	tissue="spleen, small intestine">
+	tissue="MDCK, Caco-2, spleen, small intestine">
+	<api:reference
+		type="pubmed" pmid="15908695"
+		title="The Apical Targeting Signal of the P2Y2 Receptor Is Located in Its First Extracellular Loop*"
+		journal="J. Biol. Chem." year="2005" volume="280" number="32" pages="29169-29175" />
 	<api:reference 
 		type="pubmed" 
 		title="Polarized expression of human P2Y receptors in epithelial cells from kidney, lung, and colon." 
@@ -1892,6 +1973,150 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 		type="pubmed"
 		title="The Apical Targeting Signal of the P2Y2 Receptor Is Located in Its First Extracellular Loop"
 		journal="J. Biol. Chem." year="2005" volume="280" pages="29169-29175" />
+	<api:sequence-feature 
+		id="P41231" start="315" end="377"
+		sequence="RFARDA KPPTGPSPAT PARRRLGLRR SDRTDMQRIE DVLGSSEDSR RTESTPAGSE NTKDIRL" 
+		localisation="cytoplasmic" >
+		<api:impact
+			   action="deletion"
+			   distribution="apical" /> <!-- no efect -->
+	</api:sequence-feature>
+	<api:sequence-feature 
+		id="P41231" 
+		start="95"
+		end= "97"
+		sequence="AGD"
+		localisation="extracellular"> 
+		<api:impact
+			   action="substitution"
+			   sequence="AHN"
+			   site="extracellular"
+			   distribution="apolar"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+		id="P41231" 
+		start="102"
+		end= "102"
+		sequence="SVL"
+		localisation="extracellular"> 
+		<api:impact
+			   action="substitution"
+			   sequence="GEI"
+			   site="extracellular"
+			   distribution="apolar"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="P41231" 
+			      start="95"
+			      end= "95"
+			      sequence="R"
+			      localisation="extracellular"> 
+		<api:impact
+			   action="substitution"
+			   sequence="A"
+			   site="extracellular"
+			   distribution="apolar"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="P41231" 
+			      start="97"
+			      end= "97"
+			      sequence="D"
+			      localisation="extracellular"> 
+		<api:impact
+			   action="substitution"
+			   sequence="N"
+			   site="extracellular"
+			   distribution="apolar"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="P41231" 
+			      start="96"
+			      end= "96"
+			      sequence="G"
+			      localisation="extracellular"> 
+		<api:impact
+			   action="substitution"
+			   sequence="H"
+			   site="extracellular"
+			   distribution="apolar"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="P41231" 
+			      start="108"
+			      end= "108"
+			      sequence="L"
+			      localisation="extracellular"> 
+		<api:impact
+			   action="substitution"
+			   sequence="F"
+			   site="extracellular"
+			   distribution="apolar"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="P41231" 
+			      start="115"
+			      end= "115"
+			      sequence="T"
+			      localisation="extracellular" 
+			      />
+		<api:impact
+			   action="substitution"
+			   sequence="W"
+			   site="extracellular"
+			   distribution="apical"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+	<api:sequence-feature 
+			      id="P41231" 
+			      start="121"
+			      end= "121"
+			      sequence="I"
+			      localisation="extracellular" 
+			      />
+		<api:impact
+			   action="substitution"
+			   sequence="V"
+			   site="extracellular"
+			   distribution="apical"
+			   target="P41231"
+			   />
+	</api:sequence-feature>
+<!--
+        10         20         30         40         50         60 
+MAADLGPWND TINGTWDGDE LGYRCRFNED FKYVLLPVSY GVVCVPGLCL NAVALYIFLC 
+
+        70         80         90        100        110        120 
+RLKTWNASTT YMFHLAVSDA LYAASLPLLV YYYARGDHWP FSTVLCKLVR FLFYTNLYCS 
+
+       130        140        150        160        170        180 
+ILFLTCISVH RCLGVLRPLR SLRWGRARYA RRVAGAVWVL VLACQAPVLY FVTTSARGGR 
+
+       190        200        210        220        230        240 
+VTCHDTSAPE LFSRFVAYSS VMLGLLFAVP FAVILVCYVL MARRLLKPAY GTSGGLPRAK 
+
+       250        260        270        280        290        300 
+RKSVRTIAVV LAVFALCFLP FHVTRTLYYS FRSLDLSCHT LNAINMAYKV TRPLASANSC 
+
+       310        320        330        340        350        360 
+LDPVLYFLAG QRLVRFARDA KPPTGPSPAT PARRRLGLRR SDRTDMQRIE DVLGSSEDSR 
+
+       370 
+RTESTPAGSE NTKDIRL 
+-->
 </api:variant>
 <api:variant location="apical"
 	gene="P2Y purinoceptor 4"
@@ -1899,12 +2124,51 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	UniProt="P51582"
 	synonyms=" P2Y4, Uridine nucleotide receptor, UNR, P2P"
 	comment="To investigate the polarized expression of the family of P2Y receptors, we determined the localization of the entire P2Y family following expression in Madin-Darby Canine Kidney (MDCK) Type II cells. Confocal microscopy of polarized monolayers revealed that P2Y1, P2Y11, P2Y12, and P2Y14 receptors reside at the basolateral membrane, P2Y2, P2Y4, and P2Y6 receptors are expressed at the apical membrane, and the P2Y13 receptor is unsorted."
-	tissue="spleen, small intestine">
+	tissue="MDCK, Caco-2, spleen, small intestine">
+	<api:reference
+		type="pubmed" pmid="15908695"
+		title="The Apical Targeting Signal of the P2Y2 Receptor Is Located in Its First Extracellular Loop*"
+		journal="J. Biol. Chem." year="2005" volume="280" number="32" pages="29169-29175" />
 	<api:reference 
 		type="pubmed" 
 		title="Polarized expression of human P2Y receptors in epithelial cells from kidney, lung, and colon." 
 		authors="Wolff SC, Qi AD, Harden TK, Nicholas RA." 
 		pmid="15525684" />
+	<api:sequence-feature 
+			      id="P51582" 
+			      start="313"
+			      end= "360"
+			      sequence="YRRQLRQL CGGGKPQPRT AASSLALVSL PEDSSCRWAA TPQDSSCSTP"
+			      localisation="cytoplasmic" 
+			      />
+		<api:impact
+			   action="deletion"
+			   distribution="apolar"
+			   target="P51582"
+			   />
+	</api:sequence-feature>
+<!--
+        10         20         30         40         50         60 
+MASTESSLLR SLGLSPGPGS SEVELDCWFD EDFKFILLPV SYAVVFVLGL GLNAPTLWLF 
+
+        70         80         90        100        110        120 
+IFRLRPWDAT ATYMFHLALS DTLYVLSLPT LIYYYAAHNH WPFGTEICKF VRFLFYWNLY 
+
+       130        140        150        160        170        180 
+CSVLFLTCIS VHRYLGICHP LRALRWGRPR LAGLLCLAVW LVVAGCLVPN LFFVTTSNKG 
+
+       190        200        210        220        230        240 
+TTVLCHDTTR PEEFDHYVHF SSAVMGLLFG VPCLVTLVCY GLMARRLYQP LPGSAQSSSR 
+
+       250        260        270        280        290        300 
+LRSLRTIAVV LTVFAVCFVP FHITRTIYYL ARLLEADCRV LNIVNVVYKV TRPLASANSC 
+
+       310        320        330        340        350        360 
+LDPVLYLLTG DKYRRQLRQL CGGGKPQPRT AASSLALVSL PEDSSCRWAA TPQDSSCSTP 
+
+
+RADRL 
+-->
 </api:variant>
 <api:variant location="apical"
 	gene="P2Y purinoceptor 6"
