@@ -86,6 +86,11 @@ Make sure everything from
  	http://jcs.biologists.org/content/117/25/5955.long
 (a nice review by Simons) is in
 
+Good overview on patterns
+http://jcb.rupress.org/content/177/3/477.full
+and subtypes of sorting
+
+
 -->
 
 <api:variantlist
@@ -247,9 +252,14 @@ HA
 	gene="transferring receptor"
        	spid="TFR1_MOUSE" 
        	UniProt="Q62351"
-       	synonyms="tfrc,TfR"
+       	synonyms="tfrc,TfR,TfnR"
        	tissue="MDCK"
+	dependent="AP-1B"
        	comment="basolateral transport depends mainly on residues 29-35 containing neither a tyrosine nor dileucine motif" >
+	<api:reference type="pubmed" pmid="17485489"
+		title="v-SNARE cellubrevin is required for basolateral sorting of AP-1B–dependent cargo in polarized epithelial cells"
+    		authors="Ian C. Fields, Elina Shteyn, Marc Pypaert, Véronique Proux-Gillardeaux, Richard S. Kang, Thierry Galli, Heike Fölsch"
+		journal="J Cell Biol" year="2007" volume="177" pages="477-488" doi="10.1083/jcb.200610047" />
   	<api:reference 
 		type="pubmed" 
 		pmid="10734069" 
@@ -2427,16 +2437,31 @@ Interpretation: ErbB2 does not have primary singnals for the sorting but rather 
 	synonyms="ENPP3; NPP3; CD203c antigen"
 >
 	<api:reference
+		type="pubmed" pmid="17311850"
+		journal="J Cell Sci." year="2007" volume="120" number="Pt 6" pages="1009-1016"
+		title="Differential detergent resistance of the apical and basolateral NPPases: relationship with polarized targeting."
+		authors="Delaunay JL, Breton M, Goding JW, Trugnan G, Maurice M." />
+	<api:reference
 		type="pubmed"
 		authors="Meerson NR, Bello V, Delaunay JL, Slimane TA, Delautier D, Lenoir C, Trugnan G, Maurice M."
 		title="Intracellular traffic of the ecto-nucleotide pyrophosphatase/phosphodiesterase NPP3 to the apical plasma membrane of MDCK and Caco-2 cells: apical targeting occurs in the absence of N-glycosylation."
-		journal="J Cell Sci."
-		year="2000"
-		volume="113"
-		number="Pt 23"
-		pages="4193-4202"
-		pmid="11069764"
-	/>
+		journal="J Cell Sci." year="2000" volume="113" number="Pt 23"
+		pages="4193-4202" pmid="11069764" />
+</api:variant>
+<api:variant
+	location="basolateral"
+	tissue="MDCK"
+	spid="ENPP1_HUMAN"
+	UniProt="P22413"
+	gene="ecto-nucleotide pyrophosphatase/phosphodiesterase"
+	synonyms="NPP1"
+	comment="TODO: get all information from paper out"
+>
+	<api:reference
+		type="pubmed" pmid="17311850"
+		journal="J Cell Sci." year="2007" volume="120" number="Pt 6" pages="1009-1016"
+		title="Differential detergent resistance of the apical and basolateral NPPases: relationship with polarized targeting."
+		authors="Delaunay JL, Breton M, Goding JW, Trugnan G, Maurice M." />
 </api:variant>
 <api:variant
 	location="basolateral"
@@ -2513,7 +2538,14 @@ todo: fetch Cell paper for identification of residues
 
 From 8051216:
 In MDCK cells, basolateral sorting of most membrane proteins has been shown to depend on distinct cytoplasmic domain determinants. These signals can be divided into those which are related to signals for localization at clathrin-coated pits and those which are unrelated. The LDL receptor bears two tyrosine-containing signals, one of each class, that can independently target receptors from the Golgi complex and from endosomes to the basolateral plasma membrane. We have now investigated the other structural features required for the activity of both determinants. We find that both depend, at least in part, on clusters of 1-3 acidic amino acids located on the COOH-terminal side of each tyrosine. While single residues adjacent to each tyrosine were also found to be critical, the two signals differed in that only the coated pit-unrelated signal could tolerate a phenylalanine in place of its tyrosine residue. We also found that the structural requirements for basolateral targeting of the coated pit-related signal were distinct from those required for rapid endocytosis. Apart from sharing a common tyrosine residue, no feature of the NPXY motif for coated pit localization was required for basolateral targeting. We also investigated basolateral targeting of the mouse macrophage Fc receptor (FcRII-B2) which contains a tyrosine-independent coated pit localization signal. Basolateral transport and endocytosis were found to depend on a common dileucine-type motif. Thus, basolateral targeting determinants, like coated pit domains, can contain either tyrosine- or di-leucine-containing signals. The amino acids in the vicinity of these motifs determine whether they function as determinants for endocytosis, basolateral targeting, or both.
-"
+
+From 17485489:
+Finally, we tested the sorting of LDLR and two of its mutants. LDLR contains two basolateral sorting determinants (Matter et al., 1992). The proximal signal more closely situated toward the transmembrane domain, and surrounding a tyrosine residue at position 18 is an NPXY motif (Bonifacino and Traub, 2003). By contrast, the distal targeting determinant is considered a noncanonical Y-based motif (Fölsch et al., 1999). The first mutant receptor analyzed was LDLR(Y18A), in which the critical tyrosine 18 was mutated to an alanine. The second mutant construct was truncated at position 27, right after the proximal targeting determinant (LDLR-CT27). We found that sorting of LDLR and LDLR(Y18A) is insensitive to TeNT (Fig. 3 D, left). In contrast, LDLR-CT27 was missorted in the presence of TeNT (Fig. 3 D, right). Therefore, only basolateral targeting mediated by LDLR's proximal sorting determinant is sensitive to TeNT expression.
+">
+	<api:reference type="pubmed" pmid="17485489"
+		title="v-SNARE cellubrevin is required for basolateral sorting of AP-1B–dependent cargo in polarized epithelial cells"
+    		authors="Ian C. Fields, Elina Shteyn, Marc Pypaert, Véronique Proux-Gillardeaux, Richard S. Kang, Thierry Galli, Heike Fölsch"
+		journal="J Cell Biol" year="2007" volume="177" pages="477-488" doi="10.1083/jcb.200610047" />
 	<api:reference
 		type="pubmed"
 		pmid="10189373"
