@@ -354,6 +354,19 @@ achieve polarized expression because of sequences within their C-terminal tails
 		title="Two different cytoplasmic tails direct isoforms of the membrane cofactor protein (CD46) to the basolateral surface of Madin-Darby canine kidney cells."
 		authors="Maisner A, Liszewski MK, Atkinson JP, Schwartz-Albiez R, Herrler G."
 		pmid="8702545" />
+	<api:reference pmid="8509451" journal="J Cell Biol." year="1993" month="Jun" volume="121" number="6" pages="1299-310" DOI="10.1083/jcb.121.6.1299"
+		title="The cytoplasmic tail of CD44 is required for basolateral localization in epithelial MDCK cells but does not mediate association with the detergent-insoluble cytoskeleton of fibroblasts"
+		authors="Neame, S. J., Isacke, C. M."
+		/>
+</api:variant>
+<api:variant location="basolateral"
+	gene="epithelial cell adhesion molecule"
+	synonyms="EpCAM,EPCAM"
+	sp_id="EPCAM_HUMAN"
+	UniProt="P16422">
+	<api:reference journal="J Cell Physiol." year="2019" month="Aug" volume="234" number="8" pages="12569-12580" DOI="10.1002/jcp.28132"
+		title="Shedding light on the EpCAM: An overview"
+		authors="Seyed Muhammad Yahyazadeh Mashhadi, Monireh Kazemimanesh, Arash Arashkia, Kayhan Azadmanesh, Zahra Meshkat, Behrouz Golichenari, Amirhosein Sahebkar" />
 </api:variant>
 <api:variant location="apical"
     gene="p75 neurotrophin receptor" 
@@ -1374,6 +1387,17 @@ achieve polarized expression because of sequences within their C-terminal tails
 	>
 	<api:reference type="pubmed"
 	/>
+</api:variant>
+<api:variant location="apical"
+	tissue="Caco-2,mCCK,Eph4"
+	spid="ACE2_HUMAN"
+	UniProt="Q9BYF1"
+	gene="Angiotensin-converting enzyme 2"
+	<api:reference type="pubmed"
+		journal="Cells" year="2022" month="Feb" volume="11" number="4" pages="627"
+		DOI="10.3390/cells11040627" PMID="35203278"
+		title="The ACE2 Receptor for Coronavirus Entry Is Localized at Apical Cell—Cell Junctions of Epithelial Cells"
+		author="Florian Rouaud, Isabelle Méan, Sandra Citi" />
 </api:variant>
 <api:variant location="apolar"
 	tissue="MDCK"
