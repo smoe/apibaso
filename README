@@ -8,8 +8,7 @@ to the apical or basolateral sides of the plasma membrane.
 This directory contains all information required
 to redo our investigations with two notable exceptions:
 	* the tool SPEXS for the pattern finding
-	* the tool HMMTOP for the prediction of
-	  transmembrane regions
+	* the tool HMMTOP for the prediction of transmembrane regions
 should be requested from the respective developers
 Jaak Vilo and I. Tusnady.
 
@@ -55,18 +54,3 @@ src
 	Scripts controlled by the Makefile to prepare the k-Nearest-Neighour
 	classifier on a (possibly changed)_XML file. The cross-validation had
 	a couple of scripts that went temporarily missing.
-
-Contact
--------
-
-	Steffen Moeller, PhD
-	University of Luebeck
-	Institute for Neuro- and Bioinformatics
-	Ratzeburger Allee 160
-	23538 Luebeck
-	Germany
-
-	T: +49 451 500 5504
-	F: +49 451 500 5502
-	E: moeller@inb.uni-luebeck.de
-
