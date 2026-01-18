@@ -1,73 +1,12 @@
-<api:motiflist>
-   <api:motif
-	regex="YXXL"
-	effect="endocytosis">
-	<api:reference
-		type="pubmed"
-		journal="J Biol Chem." year="2000" volume="275" number="22" pages="17187-17194"
-		title="The YXXL motif, but not the two NPXY motifs, serves as the dominant endocytosis signal for low density lipoprotein receptor-related protein."
-		authors="Li Y, Marzolo MP, van Kerkhof P, Strous GJ, Bu G."
-		abstract="All members of the low density lipoprotein (LDL) receptor family contain at least one copy of the NPXY sequence within their cytoplasmic tails. For the LDL receptor, it has been demonstrated that the NPXY motif serves as a signal for rapid endocytosis through coated pits. Thus, it is generally believed that the NPXY sequences function as endocytosis signals for all the LDL receptor family members. The primary aim of this study is to define the endocytosis signal(s) within the cytoplasmic tail of LDL receptor-related protein (LRP). By using LRP minireceptors, which mimic the function and trafficking of full-length endogenous LRP, we demonstrate that the YXXL motif, but not the two NPXY motifs, serves as the dominant signal for LRP endocytosis. We also found that the distal di-leucine motif within the LRP tail contributes to its endocytosis, and its function is independent of the YXXL motif. Although the proximal NPXY motif and the proximal di-leucine motif each play a limited role in LRP endocytosis in the context of the full-length tail, these motifs were functional within the truncated receptor tail. In addition, we show that LRP minireceptor mutants defective in endocytosis signal(s) accumulate at the cell surface and are less efficient in delivery of ligand for degradation."
-		pmid="10747918" />
-   </api:motif>
-   <api:motif
-	regex="LL"
-	effect="endocytosis">
-	<api:reference
-		type="pubmed"
-		journal="J Biol Chem." year="2000" volume="275" number="22" pages="17187-17194"
-		title="The YXXL motif, but not the two NPXY motifs, serves as the dominant endocytosis signal for low density lipoprotein receptor-related protein."
-		authors="Li Y, Marzolo MP, van Kerkhof P, Strous GJ, Bu G."
-		abstract="All members of the low density lipoprotein (LDL) receptor family contain at least one copy of the NPXY sequence within their cytoplasmic tails. For the LDL receptor, it has been demonstrated that the NPXY motif serves as a signal for rapid endocytosis through coated pits. Thus, it is generally believed that the NPXY sequences function as endocytosis signals for all the LDL receptor family members. The primary aim of this study is to define the endocytosis signal(s) within the cytoplasmic tail of LDL receptor-related protein (LRP). By using LRP minireceptors, which mimic the function and trafficking of full-length endogenous LRP, we demonstrate that the YXXL motif, but not the two NPXY motifs, serves as the dominant signal for LRP endocytosis. We also found that the distal di-leucine motif within the LRP tail contributes to its endocytosis, and its function is independent of the YXXL motif. Although the proximal NPXY motif and the proximal di-leucine motif each play a limited role in LRP endocytosis in the context of the full-length tail, these motifs were functional within the truncated receptor tail. In addition, we show that LRP minireceptor mutants defective in endocytosis signal(s) accumulate at the cell surface and are less efficient in delivery of ligand for degradation."
-		pmid="10747918" />
-	<api:reference
-		type="pubmed"
-		journal="EMBO J." year="1994" volume="13" number="13" pages="2963-2969"
-		title="A di-leucine motif mediates endocytosis and basolateral sorting of macrophage IgG Fc receptors in MDCK cells."
-		authors="Hunziker W, Fumey C."
-		abstract="An important function of the low affinity IgG Fc receptor FcRII-B2 (FcR) on macrophages is the internalization of soluble antigen-antibody complexes for lysosomal degradation. Most endocytic receptors possess tyrosine-containing cytoplasmic determinants required for endocytosis. In many proteins, signals which overlap with the endocytosis determinant and share the same critical tyrosine residue also mediate basolateral sorting in the trans-Golgi network of epithelial cells. Despite the presence of two tyrosine residues in the FcR cytosolic domain, neither one is absolutely required for coated pit localization or basolateral targeting. Nevertheless, a short domain of 13 residues containing one of the non-critical tyrosine residues mediates endocytosis and basolateral delivery. Alanine scan mutagenesis of this region now revealed a critical role of a leucine-leucine motif in both events. These findings suggest that endocytosis and basolateral sorting can be mediated by both tyrosine- and di-leucine-based signals and confirm the close relationship between the two determinants already observed for 'classical' tyrosine-dependent motifs."
-		pmid="8039492" />
-   </api:motif>
-   <api:motif
-	regex="NPXY"
-	effect="endocytosis">
-	<api:reference
-		type="pubmed"
-		journal="J Biol Chem." year="2000" volume="275" number="22" pages="17187-17194"
-		title="The YXXL motif, but not the two NPXY motifs, serves as the dominant endocytosis signal for low density lipoprotein receptor-related protein."
-		authors="Li Y, Marzolo MP, van Kerkhof P, Strous GJ, Bu G."
-		abstract="All members of the low density lipoprotein (LDL) receptor family contain at least one copy of the NPXY sequence within their cytoplasmic tails. For the LDL receptor, it has been demonstrated that the NPXY motif serves as a signal for rapid endocytosis through coated pits. Thus, it is generally believed that the NPXY sequences function as endocytosis signals for all the LDL receptor family members. The primary aim of this study is to define the endocytosis signal(s) within the cytoplasmic tail of LDL receptor-related protein (LRP). By using LRP minireceptors, which mimic the function and trafficking of full-length endogenous LRP, we demonstrate that the YXXL motif, but not the two NPXY motifs, serves as the dominant signal for LRP endocytosis. We also found that the distal di-leucine motif within the LRP tail contributes to its endocytosis, and its function is independent of the YXXL motif. Although the proximal NPXY motif and the proximal di-leucine motif each play a limited role in LRP endocytosis in the context of the full-length tail, these motifs were functional within the truncated receptor tail. In addition, we show that LRP minireceptor mutants defective in endocytosis signal(s) accumulate at the cell surface and are less efficient in delivery of ligand for degradation."
-		pmid="10747918" />
-	<api:reference
-		type="pubmed"
-		pmid="8051216"
-		journal="J Cell Biol." year="1994" volume="126" number="4" pages="991-1004"
-		title="Structural requirements and sequence motifs for polarized sorting and endocytosis of LDL and Fc receptors in MDCK cells."
-		authors="Matter K, Yamamoto EM, Mellman I."
-		abstract="In MDCK cells, basolateral sorting of most membrane proteins has been shown to depend on distinct cytoplasmic domain determinants. These signals can be divided into those which are related to signals for localization at clathrin-coated pits and those which are unrelated. The LDL receptor bears two tyrosine-containing signals, one of each class, that can independently target receptors from the Golgi complex and from endosomes to the basolateral plasma membrane. We have now investigated the other structural features required for the activity of both determinants. We find that both depend, at least in part, on clusters of 1-3 acidic amino acids located on the COOH-terminal side of each tyrosine. While single residues adjacent to each tyrosine were also found to be critical, the two signals differed in that only the coated pit-unrelated signal could tolerate a phenylalanine in place of its tyrosine residue. We also found that the structural requirements for basolateral targeting of the 'coated pit-related' signal were distinct from those required for rapid endocytosis. Apart from sharing a common tyrosine residue, no feature of the NPXY motif for coated pit localization was required for basolateral targeting. We also investigated basolateral targeting of the mouse macrophage Fc receptor (FcRII-B2) which contains a tyrosine-independent coated pit localization signal. Basolateral transport and endocytosis were found to depend on a common dileucine-type motif. Thus, basolateral targeting determinants, like coated pit domains, can contain either tyrosine- or di-leucine-containing signals. The amino acids in the vicinity of these motifs determine whether they function as determinants for endocytosis, basolateral targeting, or both." />
-   </api:motif>
-   <api:motif
-     regex="FX(6)LL" >
-	<api:reference
-	   type="pubmed"
-	   jouurnal="Mol Pharmacol." year="2009" volume="75" number="4" pages="751-761"
-	   title="Anterograde trafficking of G protein-coupled receptors: function of the C-terminal F(X)6LL motif in export from the endoplasmic reticulum."
-	   authors="Duvernay MT, Dong C, Zhang X, Zhou F, Nichols CD, Wu G."
-	   abstract="We have reported previously that the F(X)(6)LL motif in the C termini is essential for export of alpha(2B)-adrenergic (alpha(2B)-AR) and angiotensin II type 1 receptors (AT1Rs) from the endoplasmic reticulum (ER). Here, we further demonstrate that mutation of the F(X)(6)LL motif similarly abolished the cell-surface expression of alpha(2B)-AR, AT1R, alpha(1B)-AR, and beta(2)-AR, suggesting that the F(X)(6)LL motif plays a general role in ER export of G protein-coupled receptors (GPCRs). Mutation of Phe to Val, Leu, Trp, and Tyr, and mutation of LL to FF and VV, markedly inhibited alpha(2B)-AR transport, indicating that the F(X)(6)LL function cannot be fully substituted by other hydrophobic residues. The structural analysis revealed that the Phe residue in the F(X)(6)LL motif is buried in the transmembrane domains and possibly interacts with Ile58 in beta(2)-AR and Val42 in alpha(2B)-AR, whereas the LL motif is exposed to the cytosolic space. Indeed, mutation of Ile58 in beta(2)-AR and Val42 in alpha(2B)-AR markedly disrupted cell surface transport of the receptors. It is noteworthy that the Val and Ile residues are highly conserved among the GPCRs carrying the F(X)(6)LL motif. Furthermore, the Phe mutant exhibited a stronger interaction with ER chaperones and was more potently rescued by physical and chemical treatments than the LL mutant. These data suggest that the Phe residue is probably involved in folding of alpha(2B)-AR and beta(2)-AR, possibly through interaction with other hydrophobic residues in neighboring domains. These data also provide the first evidence implying crucial roles of the C termini possibly through modulating multiple events in anterograde trafficking of GPCRs."
-	    pmid="1911812" />
-   </api:motif>
-   <api:motif regex="YY" />
-    
-   </api:motif>
-   <api:motif name="oligomerisation"
-   	location="apical"
-	<api:reference type="pubmed"
-		journal="Traffic" year="2007" volume="8" number="3" pages0"251-258"
-		title="Oligomerization Is a Specific Requirement for Apical Sorting of Glycosyl-Phosphatidylinositol-Anchored Proteins but Not for Non-Raft-Associated Apical Proteins"
-		authors="Paladino S, Sarnataro D, Tivodar S, Zurzolo C."
-		pmid="17233758" />
-   </api:motif>
-</api:motiflist>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="apibaso.xsl"?>
+
+<api:variantlist
+	author="Steffen Moeller steffen.moeller@uni-rostock.de"
+	version="0.01"
+	xmlns:api="http://github.com/smoe/apibaso"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://github.com/smoe/apibaso apibaso.xsd">
 
 <!--
 
@@ -95,10 +34,6 @@ http://gowiki.tamu.edu/wiki/index.php/Category:GO:0009925_!_basal_plasma_membran
 
 -->
 
-<api:variantlist
-	author="Steffen Moeller moeller@pzr.uni-rostock.de"
-	version="0.01"
-	xmlns:api="http://bioinformatics.pzr.uni-rostock.de/~guest01/apibaso">
 <!--
 #location,protein name,spid,gene name,PubMED
 #apical,influenza hemagglutinin,?,?,"8654387, could not follow reference (1996 EMBO)"
@@ -377,32 +312,32 @@ achieve polarized expression because of sequences within their C-terminal tails
     comment="O-glycosylation required, also follow reference for cell line Caco2 (Monlauzeur et al., 1998). 15316073 states that an N-terminal basolateral signal may drag p75 to the other side, hence, the apical signal is apparently either late or weak - no other basolateral sorting signal is expected in the sequence.">
     <api:reference 
     	type="pubmed" 
-	pmid="9362511" 
-	title="The O-glycosylated stalk domain is required for apical sorting of neurotrophin receptors in polarized MDCK cells." 
-	authors="Yeaman C, Le Gall AH, Baldwin AN, Monlauzeur L, Le Bivic A, Rodriguez-Boulan E."/>
+		pmid="9362511" 
+		title="The O-glycosylated stalk domain is required for apical sorting of neurotrophin receptors in polarized MDCK cells." 
+		authors="Yeaman C, Le Gall AH, Baldwin AN, Monlauzeur L, Le Bivic A, Rodriguez-Boulan E."/>
    <api:reference 
-   	type="pubmed" 
-	pmid="15316073" 
-	title="Basolateral localisation of KCNQ1 potassium channels in MDCK cells: molecular identification of an N-terminal targeting motif." 
-	authors="Jespersen T, Rasmussen HB, Grunnet M, Jensen HS, Angelo K, Dupuis DS, Vogel LK, Jorgensen NK, Klaerke DA, Olesen SP." />
+		type="pubmed" 
+		pmid="15316073" 
+		title="Basolateral localisation of KCNQ1 potassium channels in MDCK cells: molecular identification of an N-terminal targeting motif." 
+		authors="Jespersen T, Rasmussen HB, Grunnet M, Jensen HS, Angelo K, Dupuis DS, Vogel LK, Jorgensen NK, Klaerke DA, Olesen SP." />
    <api:reference 
-		  type="pubmed" 
-		  pmid="1655809" 
-		  title="An internal deletion in the cytoplasmic tail reverses the apical localization of human NGF receptor in transfected MDCK cells." 
-		  year="1995" journal="J. Biol. Chem" volume="270" number="20" pages="12219-12225"
-		  authors="Le Bivic A, Sambuy Y, Patzak A, Patil N, Chao M, Rodriguez-Boulan E." />
+		type="pubmed" 
+		pmid="1655809" 
+		title="An internal deletion in the cytoplasmic tail reverses the apical localization of human NGF receptor in transfected MDCK cells." 
+		year="1995" journal="J. Biol. Chem" volume="270" number="20" pages="12219-12225"
+		authors="Le Bivic A, Sambuy Y, Patzak A, Patil N, Chao M, Rodriguez-Boulan E." />
    <api:sequence-feature 
-			 id="1655809" 
-			 start="276"
-			 end= "333"
-                         sequence="NSCKQ NKQGANSRPV NQTPPPEGEK LHSDSGISVD SQSLHDQQPH TQTASGQALK GDG"
-			 localisation="cytoplasmic"> 
+		id="1655809" 
+		start="276"
+		end= "333"
+		sequence="NSCKQ NKQGANSRPV NQTPPPEGEK LHSDSGISVD SQSLHDQQPH TQTASGQALK GDG"
+		localisation="cytoplasmic"> 
 	   <api:impact
-		      action="deletion"
-		      site=""
-		      distribution="basolateral"
-		      target="uniprot:P08138"
-		      />
+			action="deletion"
+			site=""
+			distribution="basolateral"
+			target="uniprot:P08138"
+			/>
 		</api:sequence-feature>
 </api:variant>
 <api:variant location="apical"
@@ -503,31 +438,31 @@ achieve polarized expression because of sequences within their C-terminal tails
 		title="The epidermal growth factor receptor juxtamembrane domain has multiple basolateral plasma membrane localization determinants, including a dominant signal with a polyproline core." 
 		authors="He C, Hobert M, Friend L, Carlin C." />	
 	<api:sequence-feature 
-			      id="12161422" 
-			      start="658"
-			      end= "659"
-			      sequence="LL"
-			      localisation="cytoplasmic"> 
+		id="12161422" 
+		start="658"
+		end= "659"
+		sequence="LL"
+		localisation="cytoplasmic"> 
 		<api:impact
-			   action="deletion"
-			   site="cytoplasmic"
-			   distribution="less basolateral*"
-			   target="P00533"
-			   />
-		</api:sequence-feature>
-		<api:sequence-feature 
-				      id="12161422" 
-				      start="667"
-				      end= "670"
-				      sequence="PLTP"
-				      localisation="cytoplasmic"> 
-			<api:impact
-				   action="deletion"
-				   site="cytoplasmic"
-				   distribution="non polar"
-				   target="P00533"
-				   />
-		</api:sequence-feature>
+			action="deletion"
+			site="cytoplasmic"
+			distribution="less basolateral*"
+			target="P00533"
+			/>
+	</api:sequence-feature>
+	<api:sequence-feature 
+		id="12161422" 
+		start="667"
+		end= "670"
+		sequence="PLTP"
+		localisation="cytoplasmic"> 
+		<api:impact
+			action="deletion"
+			site="cytoplasmic"
+			distribution="non polar"
+			target="P00533"
+			/>
+	</api:sequence-feature>
 </api:variant>
 <api:variant location="basolateral" 
 	gene="asialoglycoproteine receptor 1"
@@ -557,7 +492,7 @@ achieve polarized expression because of sequences within their C-terminal tails
 	synonym="vesicular stomatitis virus G; VSVG"
 	tissue="MDCK,FRT"
 	UniProt="P03522"
-	dependend="AP-1B"
+	dependent="AP-1B"
 	spid="VGLG_VSIVA">
 	<api:reference type="pubmed" pmid="17881725"
 		journal="Mol Biol Cell." year="2007" volume="18" number="12" pages="4872-84"
@@ -566,12 +501,11 @@ achieve polarized expression because of sequences within their C-terminal tails
 </api:variant>
 <api:variant location="apical" 
 	gene="Muscarinic acetylcholine receptor 2"
-	synonyms="M2 receptor"
+	synonyms="M2 receptor,CHRM2"
 	spid="ACM2_HUMAN" 
+	evidence="strong"
 	UniProt="P08172"
-	synonyms="chrm2"
-	tissue="MDCK"
-	evidence="strong">
+	tissue="MDCK">
      	<api:reference 
 		type="pubmed"
     	 	title="Identification of a basolateral sorting signal for the M3 muscarinic acetylcholine receptor in Madin-Darby canine kidney cells."
@@ -700,19 +634,18 @@ achieve polarized expression because of sequences within their C-terminal tails
 		authors="Beau I, Groyer-Picard MT, Le Bivic A, Vannier B, Loosfelt H, Milgrom E, Misrahi M."
 		pmid="9660834" />
 	<api:sequence-feature 
-			      id="9660834" 
-			      start="678"
-			      end= "691"
-			      sequence="VTN GSTYILVPLS H"
-			      localisation="cytoplasmic"> 
+		id="9660834" 
+		start="678"
+		end= "691"
+		sequence="VTN GSTYILVPLS H"
+		localisation="cytoplasmic"> 
 		<api:impact
-			   action="insertion"
-			   site="cytoplasmic"
-			   distribution="basolateral"
-			   target="P08138"
-			   />
+			action="insertion"
+			site="cytoplasmic"
+			distribution="basolateral"
+			target="P08138"
+			/>
 	</api:sequence-feature>
-	
 </api:variant>
 <api:variant location="basolateral" 
 	gene="LH receptor"
@@ -1392,7 +1325,7 @@ achieve polarized expression because of sequences within their C-terminal tails
 	tissue="Caco-2,mCCK,Eph4"
 	spid="ACE2_HUMAN"
 	UniProt="Q9BYF1"
-	gene="Angiotensin-converting enzyme 2"
+	gene="Angiotensin-converting enzyme 2">
 	<api:reference type="pubmed"
 		journal="Cells" year="2022" month="Feb" volume="11" number="4" pages="627"
 		DOI="10.3390/cells11040627" PMID="35203278"
@@ -1980,7 +1913,7 @@ PFREILCKKL HIPLKAQNDL DISRIKRGNT TLESTDTL
 			      end= "360"
 			      sequence="YRRQLRQL CGGGKPQPRT AASSLALVSL PEDSSCRWAA TPQDSSCSTP"
 			      localisation="cytoplasmic" 
-			      />
+			      >
 		<api:impact
 			   action="substitution"
 			   start="314"
@@ -2108,7 +2041,7 @@ PFREILCKKL HIPLKAQNDL DISRIKRGNT TLESTDTL
 			      end= "115"
 			      sequence="T"
 			      localisation="extracellular" 
-			      />
+			      >
 		<api:impact
 			   action="substitution"
 			   sequence="W"
@@ -2123,7 +2056,7 @@ PFREILCKKL HIPLKAQNDL DISRIKRGNT TLESTDTL
 			      end= "121"
 			      sequence="I"
 			      localisation="extracellular" 
-			      />
+			      >
 		<api:impact
 			   action="substitution"
 			   sequence="V"
@@ -2177,7 +2110,7 @@ RTESTPAGSE NTKDIRL
 			      end= "360"
 			      sequence="YRRQLRQL CGGGKPQPRT AASSLALVSL PEDSSCRWAA TPQDSSCSTP"
 			      localisation="cytoplasmic" 
-			      />
+			      >
 		<api:impact
 			   action="deletion"
 			   distribution="apolar"
@@ -2845,8 +2778,9 @@ Finally, we tested the sorting of LDLR and two of its mutants. LDLR contains two
 ">
 	<api:reference type="pubmed" pmid="17485489"
 		title="v-SNARE cellubrevin is required for basolateral sorting of AP-1B–dependent cargo in polarized epithelial cells"
-    		authors="Ian C. Fields, Elina Shteyn, Marc Pypaert, Véronique Proux-Gillardeaux, Richard S. Kang, Thierry Galli, Heike Fölsch"
-		journal="J Cell Biol" year="2007" volume="177" pages="477-488" doi="10.1083/jcb.200610047" />
+    	authors="Ian C. Fields, Elina Shteyn, Marc Pypaert, Véronique Proux-Gillardeaux, Richard S. Kang, Thierry Galli, Heike Fölsch"
+		journal="J Cell Biol" year="2007" volume="177" pages="477-488" doi="10.1083/jcb.200610047"
+	/>
 	<api:reference
 		type="pubmed"
 		pmid="10189373"
@@ -2856,7 +2790,8 @@ Finally, we tested the sorting of LDLR and two of its mutants. LDLR contains two
 		number="1"
 		pages="123-139"
 		title="The receptor recycling pathway contains two distinct populations of early endosomes with different sorting functions."
-		authors="Sheff DR, Daro EA, Hull M, Mellman I.">
+		authors="Sheff DR, Daro EA, Hull M, Mellman I."
+	/>
 	<api:reference
 		type="pubmed"
 		pmid="8402881"
@@ -2873,7 +2808,8 @@ Finally, we tested the sorting of LDLR and two of its mutants. LDLR contains two
 		journal="J Cell Biol." year="1994" volume="126" number="4" pages="991-1004"
 		title="Structural requirements and sequence motifs for polarized sorting and endocytosis of LDL and Fc receptors in MDCK cells."
 		authors="Matter K, Yamamoto EM, Mellman I."
-		pmid="8051216" />
+		pmid="8051216"
+	/>
 </api:variant>
 <api:variant location="basolateral"
 	tissue="MDCK"
@@ -3867,26 +3803,28 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 		</api:sequence-feature>
 	</api:variant>
 	<api:variant
-		    tissue="MDCK"
-		    location="basolateral"
-		    gene="transforming growth factor-alpha precursor"
-		    comment="pmid 8207010: Biochemical analysis showed pro-TGF-alpha was expressed on the basolateral surface as either a 17- or 30-kDa species; the 17-kDa forms of both pro-TGF-alpha constructs had basolateral/apical ratios of > 20:1"
-		    spid="TGFA_HUMAN"
-		    UniProt="P01135"
-		    evidence="strong"
-		    comment="todo, fetch article from library"
-		    >
+		tissue="MDCK"
+		location="basolateral"
+		gene="transforming growth factor-alpha precursor"
+		comment="pmid 8207010: Biochemical analysis showed pro-TGF-alpha was expressed on the basolateral surface as either a 17- or 30-kDa species; the 17-kDa forms of both pro-TGF-alpha constructs had basolateral/apical ratios of > 20:1
+		
+		todo, fetch article from library
+		"
+		spid="TGFA_HUMAN"
+		UniProt="P01135"
+		evidence="strong"
+		>
 		<api:reference
-			      type="pubmed"
-			      authors="Dempsey PJ, Coffey RJ."
-			      title="Basolateral targeting and efficient consumption of transforming growth factor-alpha when expressed in Madin-Darby canine kidney cells."
-			      journal="J Biol Chem. "
-			      year="1994"
-			      volume="269"
-			      number="24"
-			      pages="16878-16889"
-			      pmid="8207010"
-			      />
+			type="pubmed"
+			authors="Dempsey PJ, Coffey RJ."
+			title="Basolateral targeting and efficient consumption of transforming growth factor-alpha when expressed in Madin-Darby canine kidney cells."
+			journal="J Biol Chem. "
+			year="1994"
+			volume="269"
+			number="24"
+			pages="16878-16889"
+			pmid="8207010"
+			/>
 		<api:reference
 			type="pubmed"
 			journal="Exp Cell Res." year="2003" volume="285" number="2" pages="159-174"
@@ -4029,13 +3967,14 @@ AP1B Regulates LRP1 Trafficking at a Post-Golgi Recycling Endosome
 	    UniProt="P15514"
 	    comment="Experiments have been performed on the propeptide, more exactly on a C-terminal end to be cleaved off"
 	    evidence="strong"
+	>
 	    <api:reference
-		type="pubmed"
-		journal="J Biol Chem." year="2001" volume="276" number="31" pages="29538-29549"
-		title="The proamphiregulin cytoplasmic domain is required for basolateral sorting, but is not essential for constitutive or stimulus-induced processing in polarized Madin-Darby canine kidney cells."
-		authors="Brown CL, Coffey RJ, Dempsey PJ."
-J Biol Chem 2001 Sep 28;276(39):36862.
-		pmid="11382759" />
+			type="pubmed"
+			journal="J Biol Chem." year="2001" volume="276" number="31" pages="29538-29549"
+			title="The proamphiregulin cytoplasmic domain is required for basolateral sorting, but is not essential for constitutive or stimulus-induced processing in polarized Madin-Darby canine kidney cells."
+			authors="Brown CL, Coffey RJ, Dempsey PJ."
+			pmid="11382759"
+		/>
 <!--	redundant information from paper
 		<api:sequence-feature 
 				      id="11382759" 
@@ -4068,7 +4007,7 @@ J Biol Chem 2001 Sep 28;276(39):36862.
 		synonyms="SLC16A8"
 		sp_id="MOT3_HUMAN" UniProt="O95907"
 		evidence="strong"
-		commend="C-terminal region is important, need to look at full paper (not freely accessible)"
+		commend="C-terminal region is important, need to look at full paper (not freely accessible)">
 		<api:reference
 			title="Basolateral sorting signals regulating tissue-specific polarity of heteromeric monocarboxylate transporters in epithelia."
 			authors="Castorino JJ, Deborde S, Deora A, Schreiner R, Gallagher-Colombo SM, Rodriguez-Boulan E, Philp NJ."
@@ -4080,7 +4019,7 @@ J Biol Chem 2001 Sep 28;276(39):36862.
 		synonyms="SLC16A3"
 		sp_id="MOT4_HUMAN" UniProt="O15427"
 		evidence="strong"
-		commend="C-terminal region is important, need to look at full paper (not freely accessible)"
+		commend="C-terminal region is important, need to look at full paper (not freely accessible)">
 		<api:reference
 			title="Basolateral sorting signals regulating tissue-specific polarity of heteromeric monocarboxylate transporters in epithelia."
 			authors="Castorino JJ, Deborde S, Deora A, Schreiner R, Gallagher-Colombo SM, Rodriguez-Boulan E, Philp NJ."
@@ -4092,7 +4031,7 @@ J Biol Chem 2001 Sep 28;276(39):36862.
 		synonyms="SLC16A1"
 		sp_id="MOT1_HUMAN" UniProt="P53985"
 		evidence="moderate"
-		commend="In MDCK dragged in by CD147 to basolateral domain, may appear apical in other tissues"
+		commend="In MDCK dragged in by CD147 to basolateral domain, may appear apical in other tissues">
 		<api:reference
 			title="Basolateral sorting signals regulating tissue-specific polarity of heteromeric monocarboxylate transporters in epithelia."
 			authors="Castorino JJ, Deborde S, Deora A, Schreiner R, Gallagher-Colombo SM, Rodriguez-Boulan E, Philp NJ."
@@ -4200,3 +4139,5 @@ PMID: 18955496
 <!--
 -->
 <!-- Pmid 15469720, 15456847, 15365179, 15319547, 15649128, 15713912 (mutations)-->
+
+<!-- vim: ts=4-->

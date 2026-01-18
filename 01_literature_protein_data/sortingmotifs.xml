@@ -1,0 +1,102 @@
+<api:motiflist
+	author="Steffen Moeller steffen.moeller@uni-rostock.de"
+	version="0.01"
+	xmlns:api="https://github.org/smoe/apibaso">
+
+   <api:motif
+	regex="YXXL"
+	effect="endocytosis">
+	<api:reference
+		type="pubmed"
+		journal="J Biol Chem." year="2000" volume="275" number="22" pages="17187-17194"
+		title="The YXXL motif, but not the two NPXY motifs, serves as the dominant endocytosis signal for low density lipoprotein receptor-related protein."
+		authors="Li Y, Marzolo MP, van Kerkhof P, Strous GJ, Bu G."
+		abstract="All members of the low density lipoprotein (LDL) receptor family contain at least one copy of the NPXY sequence within their cytoplasmic tails. For the LDL receptor, it has been demonstrated that the NPXY motif serves as a signal for rapid endocytosis through coated pits. Thus, it is generally believed that the NPXY sequences function as endocytosis signals for all the LDL receptor family members. The primary aim of this study is to define the endocytosis signal(s) within the cytoplasmic tail of LDL receptor-related protein (LRP). By using LRP minireceptors, which mimic the function and trafficking of full-length endogenous LRP, we demonstrate that the YXXL motif, but not the two NPXY motifs, serves as the dominant signal for LRP endocytosis. We also found that the distal di-leucine motif within the LRP tail contributes to its endocytosis, and its function is independent of the YXXL motif. Although the proximal NPXY motif and the proximal di-leucine motif each play a limited role in LRP endocytosis in the context of the full-length tail, these motifs were functional within the truncated receptor tail. In addition, we show that LRP minireceptor mutants defective in endocytosis signal(s) accumulate at the cell surface and are less efficient in delivery of ligand for degradation."
+		pmid="10747918" />
+   </api:motif>
+   <api:motif
+	regex="LL"
+	effect="endocytosis">
+	<api:reference
+		type="pubmed"
+		journal="J Biol Chem." year="2000" volume="275" number="22" pages="17187-17194"
+		title="The YXXL motif, but not the two NPXY motifs, serves as the dominant endocytosis signal for low density lipoprotein receptor-related protein."
+		authors="Li Y, Marzolo MP, van Kerkhof P, Strous GJ, Bu G."
+		abstract="All members of the low density lipoprotein (LDL) receptor family contain at least one copy of the NPXY sequence within their cytoplasmic tails. For the LDL receptor, it has been demonstrated that the NPXY motif serves as a signal for rapid endocytosis through coated pits. Thus, it is generally believed that the NPXY sequences function as endocytosis signals for all the LDL receptor family members. The primary aim of this study is to define the endocytosis signal(s) within the cytoplasmic tail of LDL receptor-related protein (LRP). By using LRP minireceptors, which mimic the function and trafficking of full-length endogenous LRP, we demonstrate that the YXXL motif, but not the two NPXY motifs, serves as the dominant signal for LRP endocytosis. We also found that the distal di-leucine motif within the LRP tail contributes to its endocytosis, and its function is independent of the YXXL motif. Although the proximal NPXY motif and the proximal di-leucine motif each play a limited role in LRP endocytosis in the context of the full-length tail, these motifs were functional within the truncated receptor tail. In addition, we show that LRP minireceptor mutants defective in endocytosis signal(s) accumulate at the cell surface and are less efficient in delivery of ligand for degradation."
+		pmid="10747918" />
+	<api:reference
+		type="pubmed"
+		journal="EMBO J." year="1994" volume="13" number="13" pages="2963-2969"
+		title="A di-leucine motif mediates endocytosis and basolateral sorting of macrophage IgG Fc receptors in MDCK cells."
+		authors="Hunziker W, Fumey C."
+		abstract="An important function of the low affinity IgG Fc receptor FcRII-B2 (FcR) on macrophages is the internalization of soluble antigen-antibody complexes for lysosomal degradation. Most endocytic receptors possess tyrosine-containing cytoplasmic determinants required for endocytosis. In many proteins, signals which overlap with the endocytosis determinant and share the same critical tyrosine residue also mediate basolateral sorting in the trans-Golgi network of epithelial cells. Despite the presence of two tyrosine residues in the FcR cytosolic domain, neither one is absolutely required for coated pit localization or basolateral targeting. Nevertheless, a short domain of 13 residues containing one of the non-critical tyrosine residues mediates endocytosis and basolateral delivery. Alanine scan mutagenesis of this region now revealed a critical role of a leucine-leucine motif in both events. These findings suggest that endocytosis and basolateral sorting can be mediated by both tyrosine- and di-leucine-based signals and confirm the close relationship between the two determinants already observed for 'classical' tyrosine-dependent motifs."
+		pmid="8039492" />
+   </api:motif>
+   <api:motif
+	regex="NPXY"
+	effect="endocytosis">
+	<api:reference
+		type="pubmed"
+		journal="J Biol Chem." year="2000" volume="275" number="22" pages="17187-17194"
+		title="The YXXL motif, but not the two NPXY motifs, serves as the dominant endocytosis signal for low density lipoprotein receptor-related protein."
+		authors="Li Y, Marzolo MP, van Kerkhof P, Strous GJ, Bu G."
+		abstract="All members of the low density lipoprotein (LDL) receptor family contain at least one copy of the NPXY sequence within their cytoplasmic tails. For the LDL receptor, it has been demonstrated that the NPXY motif serves as a signal for rapid endocytosis through coated pits. Thus, it is generally believed that the NPXY sequences function as endocytosis signals for all the LDL receptor family members. The primary aim of this study is to define the endocytosis signal(s) within the cytoplasmic tail of LDL receptor-related protein (LRP). By using LRP minireceptors, which mimic the function and trafficking of full-length endogenous LRP, we demonstrate that the YXXL motif, but not the two NPXY motifs, serves as the dominant signal for LRP endocytosis. We also found that the distal di-leucine motif within the LRP tail contributes to its endocytosis, and its function is independent of the YXXL motif. Although the proximal NPXY motif and the proximal di-leucine motif each play a limited role in LRP endocytosis in the context of the full-length tail, these motifs were functional within the truncated receptor tail. In addition, we show that LRP minireceptor mutants defective in endocytosis signal(s) accumulate at the cell surface and are less efficient in delivery of ligand for degradation."
+		pmid="10747918" />
+	<api:reference
+		type="pubmed"
+		pmid="8051216"
+		journal="J Cell Biol." year="1994" volume="126" number="4" pages="991-1004"
+		title="Structural requirements and sequence motifs for polarized sorting and endocytosis of LDL and Fc receptors in MDCK cells."
+		authors="Matter K, Yamamoto EM, Mellman I."
+		abstract="In MDCK cells, basolateral sorting of most membrane proteins has been shown to depend on distinct cytoplasmic domain determinants. These signals can be divided into those which are related to signals for localization at clathrin-coated pits and those which are unrelated. The LDL receptor bears two tyrosine-containing signals, one of each class, that can independently target receptors from the Golgi complex and from endosomes to the basolateral plasma membrane. We have now investigated the other structural features required for the activity of both determinants. We find that both depend, at least in part, on clusters of 1-3 acidic amino acids located on the COOH-terminal side of each tyrosine. While single residues adjacent to each tyrosine were also found to be critical, the two signals differed in that only the coated pit-unrelated signal could tolerate a phenylalanine in place of its tyrosine residue. We also found that the structural requirements for basolateral targeting of the 'coated pit-related' signal were distinct from those required for rapid endocytosis. Apart from sharing a common tyrosine residue, no feature of the NPXY motif for coated pit localization was required for basolateral targeting. We also investigated basolateral targeting of the mouse macrophage Fc receptor (FcRII-B2) which contains a tyrosine-independent coated pit localization signal. Basolateral transport and endocytosis were found to depend on a common dileucine-type motif. Thus, basolateral targeting determinants, like coated pit domains, can contain either tyrosine- or di-leucine-containing signals. The amino acids in the vicinity of these motifs determine whether they function as determinants for endocytosis, basolateral targeting, or both." />
+   </api:motif>
+   <api:motif
+     regex="FX(6)LL" >
+	<api:reference
+	   type="pubmed"
+	   jouurnal="Mol Pharmacol." year="2009" volume="75" number="4" pages="751-761"
+	   title="Anterograde trafficking of G protein-coupled receptors: function of the C-terminal F(X)6LL motif in export from the endoplasmic reticulum."
+	   authors="Duvernay MT, Dong C, Zhang X, Zhou F, Nichols CD, Wu G."
+	   abstract="We have reported previously that the F(X)(6)LL motif in the C termini is essential for export of alpha(2B)-adrenergic (alpha(2B)-AR) and angiotensin II type 1 receptors (AT1Rs) from the endoplasmic reticulum (ER). Here, we further demonstrate that mutation of the F(X)(6)LL motif similarly abolished the cell-surface expression of alpha(2B)-AR, AT1R, alpha(1B)-AR, and beta(2)-AR, suggesting that the F(X)(6)LL motif plays a general role in ER export of G protein-coupled receptors (GPCRs). Mutation of Phe to Val, Leu, Trp, and Tyr, and mutation of LL to FF and VV, markedly inhibited alpha(2B)-AR transport, indicating that the F(X)(6)LL function cannot be fully substituted by other hydrophobic residues. The structural analysis revealed that the Phe residue in the F(X)(6)LL motif is buried in the transmembrane domains and possibly interacts with Ile58 in beta(2)-AR and Val42 in alpha(2B)-AR, whereas the LL motif is exposed to the cytosolic space. Indeed, mutation of Ile58 in beta(2)-AR and Val42 in alpha(2B)-AR markedly disrupted cell surface transport of the receptors. It is noteworthy that the Val and Ile residues are highly conserved among the GPCRs carrying the F(X)(6)LL motif. Furthermore, the Phe mutant exhibited a stronger interaction with ER chaperones and was more potently rescued by physical and chemical treatments than the LL mutant. These data suggest that the Phe residue is probably involved in folding of alpha(2B)-AR and beta(2)-AR, possibly through interaction with other hydrophobic residues in neighboring domains. These data also provide the first evidence implying crucial roles of the C termini possibly through modulating multiple events in anterograde trafficking of GPCRs."
+	    pmid="1911812" />
+   </api:motif>
+   <api:motif regex="YY" />
+
+<!--
+   <api:motif name="oligomerisation"
+     location="apical"
+    <api:reference
+        type="pubmed"
+		journal="Traffic" year="2007" volume="8" number="3" pages0"251-258"
+		title="Oligomerization Is a Specific Requirement for Apical Sorting of Glycosyl-Phosphatidylinositol-Anchored Proteins but Not for Non-Raft-Associated Apical Proteins"
+		authors="Paladino S, Sarnataro D, Tivodar S, Zurzolo C."
+		pmid="17233758" />
+   </api:motif>
+-->
+</api:motiflist>
+
+<!--
+
+Things to check out:
+
+ Transcytosis: http://jcb.rupress.org/content/111/6/2909.full.pdf+html
+
+Find what p58 is in
+	<api:reference type="pubmed" 
+		title="Lipid rafts and apical membrane traffic."
+		authors="Füllekrug J, Simons K."
+		journal="Ann N Y Acad Sci." year="2004" issue="1014" pages="164-169"
+		pmid="15153431" />
+
+Make sure everything from
+ 	http://jcs.biologists.org/content/117/25/5955.long
+(a nice review by Simons) is in
+
+Good overview on patterns
+http://jcb.rupress.org/content/177/3/477.full
+and subtypes of sorting
+
+Get data from GeneOntology in
+http://gowiki.tamu.edu/wiki/index.php/Category:GO:0009925_!_basal_plasma_membrane
+
+-->

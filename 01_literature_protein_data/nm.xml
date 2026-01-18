@@ -1,8 +1,8 @@
 
 <api:variantlist
-	author="Steffen Moeller steffen_moeller@gmx.de"
+	author="Steffen Moeller steffen.moeller@uni-rostock.de"
 	version="0.01"
-	xmlns:api="http://bioinformatics.pzr.uni-rostock.de/~guest01/apibaso">
+	xmlns:api="https://github.com/smoe/apibaso">
 
 <api:variant location="nuclear-inner-membrane"
 	gene="SUN1"

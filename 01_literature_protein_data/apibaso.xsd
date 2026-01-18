@@ -1,6 +1,6 @@
-<xsd:schema targetNamespace='http://bioinformatics.pzr.uni-rostock.de/~moeller/apibaso'
+<xsd:schema targetNamespace='http://github.com/smoe/apibaso'
      xmls:xsd="http://www.w3.org/2001/XMLSchema"
-     xmls:sol="http://bioinformatics.pzr.uni-rostock.de/~guest01/apibaso">
+     xmls:sol="http://github.com/smoe/apibaso">
  <xsd:element name="variantlist" type="sol:variantlistType" />
  <xsd:complexType name="sol:variantlistType">
   <xsd:attribute name='version' type="xsd:string">
